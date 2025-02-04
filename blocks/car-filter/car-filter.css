@@ -1,0 +1,453 @@
+.car-filter {
+  padding: 16px 0px 0;
+  height: calc(100% - 55px);
+
+  .filter-cars {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 130px;
+  }
+
+  .car-filter-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .car-filter-list {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+    gap: 12px;
+    border-bottom: 1px solid var(--dark-color);
+    flex: none;
+  }
+
+  .car-filter-list .filter {
+    display: block;
+    padding: 8px;
+    border-bottom: 2px solid var(--tertiary-white);
+    text-align: center;
+    font-family: var(--primary-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 16px;
+    color: var(--tertiary-black);
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    letter-spacing: 0.36px;
+  }
+
+  .car-filter-list .filter.selected {
+    border-bottom: 2px solid var(--primary-blue-700);
+    color: var(--primary-blue-700);
+    font-weight: var(--fw-700);
+    letter-spacing: 0;
+  }
+
+  .filter-text {
+    display: flex;
+    color: var(--secondary-black);
+    font-family: var(--body-font-arena);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 2.25rem;
+  }
+
+  .card-list-teaser {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-right: 10px;
+    gap: 16px;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .card-list .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 102px;
+    background: var(--tertiary-white);
+    box-shadow: 0px 0px 10.8px 0px rgba(169, 169, 169, 0.11);
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .card-list .card .card-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-list .card .card-image {
+    width: 130px;
+  }
+
+  .card-list .card .card-image img {
+    width: 100%;
+  }
+
+  .card-list .card .card-logo-image {
+    max-width: 100px;
+    max-height: 25px;
+  }
+
+  .card-list .card .card-logo-image img {
+    max-width: 100px;
+    max-height: 25px;
+  }
+
+  .card-list .card .card-content {
+    display: flex;
+    gap: 5px;
+  }
+
+  .card-list .card .card-content p {
+    color: var(--neutrals-unfilled-inactive, #939393);
+    font-family: var(--body-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.25rem;
+    margin: 0;
+  }
+
+  .card-list .card .card-content .card-title {
+    display: none;
+  }
+
+  .teaser.header-image-teaser {
+    display: none;
+  }
+
+  .card-list-teaser .teaser-list {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .teaser__actions {
+    display: flex;
+    align-items: end;
+  }
+
+  .card-list-teaser .teaser__card {
+    background: linear-gradient(228deg, rgba(23, 29, 155, 0.1) 31.52%, rgba(255, 98, 0, 0.1) 111.9%);
+  }
+
+  /* scrollbar */
+  .card-list::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .card-list::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  .card-list::-webkit-scrollbar-thumb {
+    background: var(--primary-blue-700);
+  }
+
+  .card-list-teaser .teaser-list .teaser__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+    gap: 1.5625rem;
+    align-items: end;
+  }
+
+  .card-list-teaser .teaser-list .teaser__title h3 {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .card-list-teaser .teaser-list .teaser__description p {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: 1.0625rem;
+    margin: 0;
+  }
+
+  .card-list-teaser .teaser-list .container {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .car-filter .teaser__actions .button.button-primary-blue {
+    background-color: transparent;
+    width: 47px;
+    height: 42px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none"><path d="M12.0331 42.2498L9.75 39.9667L34.5502 15.1665H19.5V11.9165H40.0833V32.4998H36.8333V17.4496L12.0331 42.2498Z" fill="%23171C8F"/></svg>');
+    border: 0;
+    font-size: 0;
+  }
+
+  .car-filter .teaser__actions .button.button-primary-blue:hover {
+    background-size: 60px;
+  }
+
+  .car-filter .teaser__actions .button.button-primary-blue::after {
+    display: none;
+  }
+
+  .card-list .card::after {
+    content: '';
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s linear;
+  }
+
+  .card-list .card-orange.card:hover::after {
+    height: 56px;
+    background: linear-gradient(0deg, rgba(252, 190, 98, 0.1) 11.17%, rgba(255, 255, 255, 0.1) 68.17%);
+    border-bottom: 2px solid var(--accent-colours-vibrant-sections-1);
+  }
+
+  .card-list .card-blue.card:hover::after {
+    height: 56px;
+    background: linear-gradient(0deg, rgba(57, 139, 215, 0.1) 11.17%, rgba(255, 255, 255, 0.1) 68.17%);
+    border-bottom: 2px solid var(--accent-colours-vibrant-sections-2);
+  }
+
+  .card-list .card-green.card:hover::after {
+    height: 56px;
+    background: linear-gradient(0deg, rgba(0, 188, 164, 0.1) 11.17%, rgba(255, 255, 255, 0.1) 68.17%);
+    border-bottom: 2px solid var(--accent-colours-vibrant-sections-3);
+  }
+
+  .card-list .card-red.card:hover::after {
+    height: 56px;
+    background: linear-gradient(0deg, rgba(229, 113, 120, 0.1) 11.17%, rgba(255, 255, 255, 0.1) 68.17%);
+    border-bottom: 2px solid var(--accent-colours-vibrant-sections-4);
+  }
+}
+
+@media (width >=768px) {
+  .desktop-panel.panel.cars {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .car-filter {
+    height: auto;
+
+    .filter-cars {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 0;
+    }
+
+    .car-filter-list {
+      width: fit-content;
+    }
+
+    .car-filter-list .filter {
+      display: block;
+      padding: 12px 20px;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(3, 189px);
+      min-height: 240px;
+      max-height: 326px;
+      padding-bottom: 15px;
+      height: auto;
+      border-bottom: 1px solid var(--tertiary-medium-grey);
+    }
+
+    .card-list .card {
+      flex-direction: column;
+      justify-content: end;
+      width: 189px;
+      height: 173px;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .card-list .card .card-image {
+      width: 100%;
+      height: 102px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-list .card .card-image img {
+      width: auto;
+      height: 100%;
+    }
+
+    .card-list .card .card-info {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 56px;
+      padding: 8px;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    .card-list .card .card-content {
+      justify-content: center;
+    }
+
+    .card-list .card .card-content p {
+      font-size: 0.875rem;
+    }
+
+    .navbar-arena .card-list-teaser {
+      padding-bottom: 24px;
+      overflow-y: inherit;
+    }
+
+    .card-list-teaser .teaser-list {
+      position: static;
+      bottom: inherit;
+      left: inherit;
+      right: inherit;
+      padding-top: 10px;
+    }
+
+    .card-list-teaser .teaser-list .teaser .container {
+      width: 100%;
+      max-width: inherit;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .teaser__card {
+      align-items: center;
+      border-radius: 0 !important;
+    }
+
+    .card-list-teaser .teaser-list .teaser__content {
+      width: 100%;
+      padding: 12px 24px;
+      align-items: center;
+    }
+
+    .car-filter .teaser__actions a {
+      margin: 0 !important;
+    }
+
+    .card-list-teaser .teaser-list .teaser__info {
+      display: flex;
+      gap: 5px;
+    }
+
+    .card-list-teaser .teaser-list .teaser__title h3,
+    .card-list-teaser .teaser-list .teaser__description p {
+      font-size: 1rem !important;
+      font-style: normal;
+      font-weight: var(--fw-300);
+      line-height: 20px;
+      margin: 0;
+    }
+
+    .card-list-teaser .teaser-list .teaser__title h3 {
+      font-weight: var(--fw-600);
+    }
+
+    .navbar-arena .card-list-teaser .card-list {
+      overflow-y: auto;
+    }
+  }
+
+  .card-list-teaser .teaser__card {
+    background: linear-gradient(228deg, rgba(23, 29, 155, 0.1) 31.52%, rgba(255, 98, 0, 0.1) 111.9%);
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .car-filter .teaser__actions .button.button-primary-blue {
+    display: block;
+    background-color: transparent;
+    height: 100%;
+    width: 99%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none"><path d="M12.0331 42.2498L9.75 39.9667L34.5502 15.1665H19.5V11.9165H40.0833V32.4998H36.8333V17.4496L12.0331 42.2498Z" fill="%23171C8F"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 52px;
+    border: 0;
+    font-size: 0;
+    position: absolute !important;
+    inset: 0;
+    right: 16px;
+    transition: background-size 0.2s ease-in-out;
+  }
+}
+
+@media (width >=930px) {
+  .car-filter .card-list {
+    grid-template-columns: repeat(4, 189px);
+  }
+}
+
+@media (width >=1200px) {
+  .car-filter {
+    .card-list {
+      grid-template-columns: repeat(5, 189px);
+    }
+
+    .car-filter-list .filter {
+      display: block;
+      padding: 12px 48px;
+    }
+  }
+}
+
+@media (height <=650px) {
+  .car-filter {
+    .card-list {
+      max-height: 270px;
+    }
+  }
+}
+
+@media (width <=600px) {
+  .car-filter {
+    .card-list {
+      max-height: inherit;
+    }
+  }
+}

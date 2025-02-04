@@ -1,0 +1,108 @@
+{
+    "definitions": [
+        {
+            "title": "Brand Header",
+            "id": "brand-header",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Brand Header",
+                            "model": "brand-header",
+                            "filter": "brand-header"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "brand-header",
+            "fields": [
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "multi": false,
+                    "valueType": "string",
+                    "name": "logoImage",
+                    "label": "Logo Image"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "logoImageAlt",
+                    "label": "Logo Alt Text"
+                },
+                {
+                    "component": "text-input",
+                    "name": "primaryText",
+                    "label": "CTA Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "primaryLink",
+                    "label": "CTA Link"
+                },
+                {
+                    "component": "select",
+                    "name": "primaryTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                },
+                {
+                    "component": "text-input",
+                    "name": "secondaryText",
+                    "label": "Secondary CTA Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "secondaryLink",
+                    "label": "Secondary CTA Link"
+                },
+                {
+                    "component": "select",
+                    "name": "secondaryTarget",
+                    "value": "",
+                    "label": "Open Secondary Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "brand-header",
+            "components": [
+                "cta"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+.hero-banner-carousel__container.life-at-msil {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+}
+
+.hero-banner-carousel__container.life-at-msil .slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner-carousel__container.life-at-msil .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-banner-carousel__container.life-at-msil .main-title {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    margin: 0;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    border-bottom: 1px solid var(--secondary-gray-200);
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-banner-carousel__container.life-at-msil .carousel-container .indicators .line.video-bar.active,
+.hero-banner-carousel__container.life-at-msil .carousel-container .indicators .line.image-bar.active {
+    background: var(--dark-color);
+}
+
+.hero-banner-carousel__container.life-at-msil .carousel-container .indicators .line.video-bar .video-progress-fill,
+.hero-banner-carousel__container.life-at-msil .carousel-container .indicators .line.image-bar .image-progress-fill {
+    width: 0;
+    background: var(--primary-blue-700);
+    height: 2px;
+    transition: width 0.3s linear;
+}
+
+.hero-banner-carousel__container.life-at-msil .content-overlay .banner-title {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.25rem;
+}
+
+.hero-banner-carousel__container.life-at-msil .banner-sub-title {
+    color: var(--secondary-black);
+    font-family: var(--body-font-arena);
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: 1rem;
+    padding-bottom: 24px;
+}
+
+.hero-banner-carousel__container.life-at-msil .indicators {
+    position: relative;
+    transform: none;
+}
+
+.hero-banner-carousel__container.life-at-msil .indicators .carousel-right-arrow {
+    display: none;
+}
+
+.hero-banner-carousel__container.life-at-msil .slide img,
+.hero-banner-carousel__container.life-at-msil .slide video {
+    height: 168px;
+}
+
+@media (width >=768px) {
+    .hero-banner-carousel__container.life-at-msil {
+        position: relative;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .main-title {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: -0.48px;
+        border-bottom: none;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .content-overlay .banner-title {
+        color: #181818;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .banner-sub-title {
+        font-size: 1rem;
+        font-weight: var(--fw-400);
+        line-height: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .indicators {
+        right: 64px;
+        top: 60px;
+        position: absolute;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .slide img,
+    .hero-banner-carousel__container.life-at-msil .slide video {
+        height: 560px;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .indicators .carousel-right-arrow {
+        display: flex;
+    }
+
+    .hero-banner-carousel__container.life-at-msil .carousel-container {
+        position: static;
+    }
+}

@@ -1,0 +1,364 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section",
+      "sf-joureny-start",
+      "loan-application"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "logo",
+      "teaser",
+      "cta",
+      "ctaWithIcon",
+      "contact",
+      "link-column",
+      "sign-in",
+      "icontitle",
+      "location",
+      "car-filter",
+      "car-filter-v2",
+      "banner-carousel",
+      "explore-banner-v2",
+      "engine-tabs",
+      "highlights",
+      "finance-options",
+      "slider",
+      "arena-help-me-select",
+      "best-deals",
+      "car-detail-feature",
+      "video-teaser",
+      "visual-indicator",
+      "finance-entry-point",
+      "variant-listing",
+      "car-detail-banner",
+      "brand-header",
+      "section-navigator",
+      "dealer-cards",
+      "image-banner",
+      "logo-list",
+      "mfe-poc",
+      "order-history-tab",
+      "teaser-list",
+      "image-carousel",
+      "journey-carousel",
+      "faq",
+      "video",
+      "ebooking",
+      "collapsible-text",
+      "nearest-dealer",
+      "loan-calculator",
+      "disclaimer-faq",
+      "register-interest",
+      "corporate-slider",
+      "corporate-banner",
+      "corporate-investor-card",
+      "corporate-business-card",
+      "csr-programs-awards",
+      "customer-detail",
+      "dealer-list",
+      "filter-form",
+      "loan-compare",
+      "loan-status",
+      "login-page",
+      "model-selection",
+      "personal-details",
+      "profile-dealership-activities",
+      "pre-approved",
+      "price-summary",
+      "profile-overview-form",
+      "userprofile",
+      "variant-detail",
+      "corporate-timeline",
+      "book-test-drive",
+      "brand-philosophy",
+      "car-config",
+      "car-compare",
+      "variant-carousel",
+      "feature-tabs",
+      "engine-feature",
+      "engine-feature",
+      "hotspot-engine",
+      "hotspot-video",
+      "privacy-modal",
+      "book-showroom-visit",
+      "dealer-locator-filter",
+      "register-interest-page",
+      "variant-detail-tab",
+      "sf-dealer-locator",
+      "financier-mapping",
+      "contact-support-list",
+      "benefit-cards",
+      "benefit-card",
+      "profile-hero-banner",
+      "search-header"
+    ]
+  },
+  {
+    "id": "arena-help-me-select",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "banner-carousel",
+    "components": [
+      "banner-carousel-car"
+    ]
+  },
+  {
+    "id": "benefit-cards",
+    "components": [
+      "benefit-card"
+    ]
+  },
+  {
+    "id": "best-deals",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "book-showroom-visit",
+    "components": [
+      "privacy-modal"
+    ]
+  },
+  {
+    "id": "book-test-drive",
+    "components": []
+  },
+  {
+    "id": "brand-header",
+    "components": [
+      "cta"
+    ]
+  },
+  {
+    "id": "brand-philosophy",
+    "components": [
+      "brand-philosophy-item"
+    ]
+  },
+  {
+    "id": "contact",
+    "components": [
+      "ctaWithIcon"
+    ]
+  },
+  {
+    "id": "corporate-banner",
+    "components": [
+      "corporate-banner-item"
+    ]
+  },
+  {
+    "id": "corporate-business-card",
+    "components": [
+      "corporate-business-card-item"
+    ]
+  },
+  {
+    "id": "corporate-investor-card",
+    "components": [
+      "corporate-investor-card-item"
+    ]
+  },
+  {
+    "id": "corporate-slider",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "corporate-timeline",
+    "components": [
+      "corporate-timeline-item"
+    ]
+  },
+  {
+    "id": "csr-programs-awards",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "dealer-cards",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "disclaimer-faq",
+    "components": [
+      "disclaimer-faq-item"
+    ]
+  },
+  {
+    "id": "engine-feature",
+    "components": [
+      "engine-hotspot"
+    ]
+  },
+  {
+    "id": "engine-hotspot",
+    "components": []
+  },
+  {
+    "id": "engine-tabs",
+    "components": [
+      "highlight-item"
+    ]
+  },
+  {
+    "id": "feature-tabs",
+    "components": [
+      "hotspot"
+    ]
+  },
+  {
+    "id": "finance-entry-point",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "finance-options",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "highlights",
+    "components": [
+      "highlight"
+    ]
+  },
+  {
+    "id": "hotspot",
+    "components": []
+  },
+  {
+    "id": "link-column",
+    "components": [
+      "cta"
+    ]
+  },
+  {
+    "id": "loan-calculator",
+    "components": []
+  },
+  {
+    "id": "mfe-poc",
+    "components": []
+  },
+  {
+    "id": "register-interest-page",
+    "components": []
+  },
+  {
+    "id": "register-interest",
+    "components": []
+  },
+  {
+    "id": "section-navigator",
+    "components": []
+  },
+  {
+    "id": "sign-in",
+    "components": [
+      "ctaWithIcon"
+    ]
+  },
+  {
+    "id": "slider",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "teaser-list",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "contact-support-list",
+    "components": [
+      "contact-support"
+    ]
+  },
+  {
+    "id": "dealer-list",
+    "components": [
+      "dealer"
+    ]
+  },
+  {
+    "id": "faq",
+    "components": [
+      "faq-item"
+    ]
+  },
+  {
+    "id": "image-carousel",
+    "components": [
+      "image-slide"
+    ]
+  },
+  {
+    "id": "journey-carousel",
+    "components": [
+      "journey-carousel-item"
+    ]
+  },
+  {
+    "id": "loan-application",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "sf-joureny-start",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  }
+]

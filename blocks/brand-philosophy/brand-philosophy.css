@@ -1,0 +1,158 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.brand-philosophy .slide {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+
+}
+
+.brand-philosophy .slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.brand-philosophy .block,
+.brand-philosophy .indicator-container {
+    position: relative;
+}
+
+.brand-philosophy .indicators {
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+.brand-philosophy .indicator-container .indicators {
+    bottom: 25px;
+    width: 100%;
+}
+
+.brand-philosophy .content-overlay {
+    background: linear-gradient(58deg, #000 9.16%, rgba(0, 0, 0, 0.00) 53.63%);
+    margin-bottom: 10px;
+}
+
+.brand-philosophy .line {
+    width: 50px;
+    height: 2px;
+    background: #D9D9D9;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-philosophy .line.active {
+    transform: scaleY(1);
+    background: #D9D9D9;
+    width: 240px;
+}
+
+.brand-philosophy .indicator-container .indicators .line.image-bar .image-progress-fill {
+    width: 0;
+    background: var(--primary-blue-700);
+    height: 2px;
+    transition: width 0.3s linear;
+}
+
+.brand-philosophy-wrapper img,
+.brand-philosophy-wrapper video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.brand-philosophy-wrapper .brand-philosophy-carousel__slides {
+    overflow: hidden;
+    position: relative;
+}
+
+.brand-philosophy-wrapper .brand-philosophy-carousel__slides .slide.active .content-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.brand-philosophy .content-overlay .container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.brand-philosophy-title {
+    position: absolute;
+    bottom: 33px;
+    width: 10rem;
+}
+
+.brand-philosophy-title h3 {
+    color: var(--secondary-gray-10);
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    font-style: normal;
+    line-height: 1.25rem;
+    text-transform: capitalize;
+}
+
+.brand-philosophy-slide-count {
+    color: var(--secondary-gray-10);
+    margin: 0;
+    font-weight: var(--fw-700);
+    font-size: 1.25rem;
+}
+
+.brand-philosophy-slide-lenght {
+    color: var(--secondary-gray-10);
+    font-weight: var(--fw-400);
+    font-size: .625rem;
+}
+
+.gredient-effect {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    background: linear-gradient(180deg, rgb(215 219 224 / 0%) 0%, #fff 38%, #ececec 74%, rgba(250.71, 250.71, 250.71, 0) 100%);
+    top: -113px;
+}
+
+@media (width >=768px) {
+
+    .gredient-effect {
+        height: 44%;
+        background: linear-gradient(180deg, rgb(215 219 224 / 0%) 0%, #fff 55%, #ececec 68%, rgba(250.71, 250.71, 250.71, 0) 100%);
+        top: -185px;
+    }
+
+    .brand-philosophy-wrapper .brand-philosophy-carousel__slides .slide img,
+    .brand-philosophy-wrapper .brand-philosophy-carousel__slides .slide video {
+        height: 768px;
+    }
+
+    .brand-philosophy .indicator-container .indicators {
+        bottom: 80px;
+    }
+
+    .brand-philosophy-title {
+        bottom: 11.0625rem;
+        width: 26.25rem;
+    }
+
+    .brand-philosophy-slide-count {
+        font-size: 1.5rem;
+    }
+
+    .brand-philosophy-slide-lenght {
+        font-size: .875rem;
+    }
+
+    .brand-philosophy-title h3 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        /* 120% */
+    }
+}

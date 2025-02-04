@@ -1,0 +1,573 @@
+.variant-carousel {
+  position: relative;
+}
+
+.variant-carousel .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.variant-carousel .container-wrapper {
+  position: relative;
+  z-index: 2;
+  padding-top: 104px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background: linear-gradient(180deg,
+      rgba(248, 248, 248, 0.5) 47.08%,
+      rgba(229, 229, 229, 0.5) 63.28%,
+      rgba(255, 255, 255, 0.5) 100%);
+}
+
+.variant-carousel .container-wrapper .container {
+  position: relative;
+}
+
+.variant-carousel .container-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background: linear-gradient(0deg,
+      #fff -11.15%,
+      rgba(255, 255, 255, 0.9) 45.05%,
+      rgba(255, 255, 255, 0) 97.09%);
+}
+
+.variant-carousel-title-wrapper .title * {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.variant-carousal-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.variant-carousal-wrapper .carousel-controls {
+  position: relative;
+  top: -40px;
+}
+
+.variant-carousal-wrapper .carousel-controls .nav-arrow {
+  display: none;
+}
+
+.variant-carousal-wrapper .carousel-controls .slide-count {
+  color: var(--tertiary-black);
+  font-family: var(--primary-font-arena);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 0.875rem;
+}
+
+.variant-carousal-wrapper .carousel-controls .slide-count .current {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--fw-500);
+  line-height: 0.875rem;
+}
+
+.variant-carousel-title-wrapper .brochure {
+  position: absolute;
+  bottom: -45px;
+  left: 20px;
+  z-index: 3;
+}
+
+.variant-carousel-title-wrapper .brochure .button {
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  text-decoration: underline;
+  color: var(--primary-blue-700);
+  font-family: var(--body-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 140%
+}
+
+.variant-carousel-title-wrapper .brochure a.button-icon::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 5px;
+  top: 8px;
+  background: url(../../icons/download-brochure.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.variant-carousel-title-wrapper .button-primary-clear.button-icon::before {
+  left: 0px;
+  z-index: 1;
+}
+
+.variant-carousel-content-wrapper .variant-filters .filter-tabs {
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid var(--bars-unselected);
+}
+
+.variant-carousel-content-wrapper .variant-filters .filter-tabs li {
+  color: var(--tertiary-black);
+  text-align: center;
+  font-family: var(--primary-font-arena);
+  font-size: 0.625rem;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  border-bottom: 1px solid var(--bars-unselected);
+  margin-bottom: -1px;
+}
+
+.variant-carousel-content-wrapper .variant-filters .filter-tabs li.active {
+  color: var(--primary-blue-700);
+  font-weight: var(--fw-700);
+  border-bottom: 1px solid var(--primary-blue-700);
+  letter-spacing: 0px;
+}
+
+.variant-carousel-content-wrapper .variant-filters .gearbox-filter {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.variant-carousel-content-wrapper .variant-filters .gearbox-filter label {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.variant-carousal-wrapper .subtitle {
+  display: none;
+}
+
+.variant-carousel .variant-cards {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+  transform: translateX(0px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.variant-carousel .variant-cards .variant-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.variant-carousel .variant-cards .variant-card img {
+  width: 240px;
+  margin-bottom: -20px;
+}
+
+.variant-carousel .variant-cards .variant-card .card-content {
+  width: 100%;
+  padding: 20px 15px 22px;
+  background: linear-gradient(180deg, #fefefe 0%, #e3e3e3 100%);
+}
+
+.card-content .variant-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.card-content .variant-heading .variant-title * {
+  color: #231f20;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 0.875rem;
+  margin: 0;
+}
+
+.card-content .variant-heading .variant-ex-showroom p {
+  color: var(--inactive-content);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 18.088px;
+  margin: 0;
+}
+
+.card-content .variant-heading .variant-ex-showroom p strong {
+  color: var(--tertiary-black);
+  text-align: right;
+  font-family: var(--primary-font-arena);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 18.088px;
+}
+
+.card-content .variant-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-content .variant-overview p {
+  display: flex;
+  align-items: center;
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 1.125rem;
+  gap: 8px;
+}
+
+.card-content .variant-overview .waiting-tag {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 20px;
+  border: 0.5px solid #dbdbdb;
+  backdrop-filter: blur(20px);
+  padding: 0 8px;
+}
+
+.card-content .features {
+  margin: 0;
+  position: relative;
+  padding-top: 12px;
+}
+
+.card-content .features::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      #000 50%,
+      rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+}
+
+.card-content .features li {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 1.125rem;
+}
+
+.card-content .action-buttons {
+  padding-top: 16px;
+}
+
+.variant-carousel .links-section {
+  display: none;
+}
+
+/* Hide the default checkbox appearance */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox box */
+.custom-checkbox .checkbox-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: inline-block;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Change the border color when checkbox is checked (but no checkmark) */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-box {
+  background-color: var(--primary-blue-700);
+  border-color: var(--primary-blue-700);
+}
+
+/* Optional: Style the label text */
+.custom-checkbox {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+.custom-checkbox .checkbox-box:hover {
+  border-color: #888;
+}
+.custom-checkbox input[type="checkbox"]:focus + .checkbox-box {
+  border-color: var(--primary-blue-700);
+}
+
+.variant-carousel-wrapper .variant-cards .variant-card .action-buttons{
+  display: block;
+}
+
+@media (width >=768px) {
+  .variant-carousel-title-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .custom-checkbox .checkbox-box {
+    margin-right: 6px;
+  }
+
+  .variant-carousel-title-wrapper .title * {
+    font-size: 2rem;
+    margin-bottom: 46px;
+  }
+
+  .variant-carousel-title-wrapper .brochure {
+    position: static;
+    bottom: inherit;
+    left: inherit;
+    z-index: 3;
+  }
+
+  .variant-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .variant-carousel-content-wrapper .variant-filters .filter-tabs {
+    gap: 60px;
+  }
+
+  .variant-carousel-content-wrapper .variant-filters .filter-tabs li {
+    font-weight: var(--fw-600);
+    border-bottom: 1px solid var(--bars-unselected);
+    letter-spacing: 0px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 12px 8px;
+  }
+
+  .variant-carousel-content-wrapper .variant-filters .filter-tabs li.active {
+    font-weight: var(--fw-600);
+    border-bottom: 2px solid var(--primary-blue-700);
+    letter-spacing: 0px;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  .variant-carousel-title-wrapper .brochure .button {
+    font-size: .875rem;
+  }
+
+  .variant-carousel-title-wrapper .brochure a.button-icon::before {
+    height: 24px;
+    width: 24px;
+    left: 0px;
+    top: 6px;
+  }
+
+  .variant-carousel-content-wrapper .variant-filters .gearbox-filter {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .variant-carousel-content-wrapper .variant-filters .gearbox-filter label {
+    font-size: 0.875rem;
+    gap: 8px;
+  }
+
+  .variant-carousal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 38px;
+  }
+
+  .variant-carousal-wrapper .carousel-controls {
+    position: static;
+    top: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .nav-arrow {
+    display: block;
+    height: 24px;
+    width: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .nav-arrow.next {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.7016 12.6H6V11.4H15.7016L11.1446 6.843L12 6L18 12L12 18L11.1446 17.157L15.7016 12.6Z" fill="black"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .nav-arrow.prev {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.2984 12.6H18V11.4H8.2984L12.8554 6.843L12 6L6 12L12 18L12.8554 17.157L8.2984 12.6Z" fill="black"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .nav-arrow.next.disabled,
+  .variant-carousal-wrapper .carousel-controls .nav-arrow.prev.disabled {
+    pointer-events: none;
+    opacity: o.5;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .slide-count {
+    color: var(--tertiary-black);
+    font-family: var(--primary-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: 0.875rem;
+  }
+
+  .variant-carousal-wrapper .carousel-controls .slide-count .current {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 0.875rem;
+  }
+
+  .variant-carousal-wrapper .subtitle {
+    display: block;
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: normal;
+    margin-top: 42px;
+  }
+
+  .variant-carousel .variant-cards .variant-card {
+    flex: 0 0 33.333%;
+  }
+
+  .variant-carousel .links-section {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    gap: 50px;
+    padding-top: 57px;
+  }
+
+  .variant-carousel .links-section .button.button-secondary-blue {
+    color: var(--primary-blue-700);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 100%;
+    text-decoration-line: underline;
+    position: relative;
+    padding: 0 30px 0 0;
+    border: none;
+  }
+
+  .variant-carousel .links-section .button.button-secondary-blue:hover {
+    background: none;
+  }
+
+  .variant-carousel .links-section .button.button-secondary-blue::after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36" fill="none"><path d="M20.6065 15.2682L12.0314 23.8433L10.9904 22.7634L19.5654 14.1883L11.5843 14.1151L11.6091 12.6003L22.1175 12.6967L22.0193 23.3997L20.5319 23.3971L20.6065 15.2682Z" fill="%23171C8F"/></svg>');
+    transition: all 0.2s linear;
+  }
+
+  .variant-carousel .links-section .button.button-secondary-blue:hover::after {
+    transform: scale(1.6);
+    transform-origin: bottom left 0;
+  }
+
+  .variant-carousel .variant-cards .variant-card .card-content {
+    padding: 20px 8px 22px;
+  }
+
+  .card-content .variant-overview p {
+    line-height: 1rem;
+    gap: 5px;
+  }
+
+  .card-content .variant-overview .waiting-tag{
+    line-height: 1rem;
+  }
+
+  .variant-carousel-wrapper .variant-cards .variant-card .action-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .variant-carousel-wrapper .variant-cards .variant-card .action-buttons a.button{
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+
+@media (width >=1200px) {
+  .variant-carousel-content-wrapper .variant-filters .gearbox-filter {
+    gap: 40px;
+  }
+  .variant-carousel .variant-cards .variant-card .card-content {
+    padding: 20px 15px 22px;
+  }
+
+  .card-content .variant-overview p {
+    line-height: 1.125rem;
+    gap: 8px;
+  }
+
+  .card-content .variant-overview .waiting-tag{
+    line-height: 1.25rem;
+  }
+  .variant-carousel-wrapper .variant-cards .variant-card .action-buttons a.button{
+    padding: 0.75rem 1.5rem;
+  }
+}

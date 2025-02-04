@@ -1,0 +1,27 @@
+[
+  {
+    "id": "main",
+    "components": ["section", "sf-joureny-start", "loan-application"]
+  },
+  {
+    "...": "./_section.json#/filters"
+  },
+  {
+    "...": "../blocks/*/_*.json#/filters"
+  },
+  {
+    "...": "../commons/blocks/cards/_cards.json#/filters"
+  },
+  {
+    "...": "../commons/blocks/columns/_columns.json#/filters"
+  },
+  {
+    "...": "../commons/blocks/fragment/_fragment.json#/filters"
+  },
+  {
+    "...": "../commons/blocks/hero/_hero.json#/filters"
+  },
+  {
+    "...": "../commons/blocks/smart-finance/*/_*.json#/filters"
+  }
+]

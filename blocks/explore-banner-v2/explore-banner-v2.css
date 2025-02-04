@@ -1,0 +1,225 @@
+.explore-banner-v2-wrapper {
+  overflow: hidden;
+}
+
+.explore-banner-v2 .component-container {
+  background: var(--primary-main);
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .text_container {
+    padding: 205px 20px 41px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    .component-title,
+    .component-subtitle {
+      margin: 0;
+      color: var(--Primary-Variations-Tertiary, #fff);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: var(--primary-font-arena);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      width: 235px;
+    }
+
+    .component-description {
+      margin-top: 16px;
+      color: var(--Primary-Variations-Tertiary, #fff);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: var(--body-font-arena);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      width: 277px;
+    }
+
+    .cta-action {
+      display: flex;
+      margin-top: 24px;
+    }
+
+    .cta-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+
+      .cta__new-primary {
+        color: var(--neutrals-sub-texts-paragraphs, #000);
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: var(--body-font-arena);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        width: fit-content;
+        height: 34px;
+        padding: 8px 16px;
+        background: var(--Primary-Variations-Tertiary, #fff);
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .cta__new-outlined {
+        color: var(--Primary-Variations-Tertiary, #fff);
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: var(--body-font-arena);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        width: fit-content;
+        height: 34px;
+        padding: 8px 16px;
+        border: 1px solid var(--Primary-Variations-Tertiary, #fff);
+      }
+    }
+  }
+
+  .logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    img {
+      max-width: 146px;
+      display: block;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 620px;
+      position: relative;
+      z-index: 0;
+    }
+  }
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      20deg,
+      rgba(1, 4, 75, 0.6) 22.06%,
+      rgba(1, 4, 75, 0) 73.26%
+    );
+    z-index: 1;
+  }
+  .profile-banner-desktop {
+    display: none;
+  }
+  .profile-banner-mobile {
+    display: block;
+  }
+  .banner-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+@media (width >=768px) {
+  .explore-banner-v2 .component-container {
+    height: 715px;
+
+    .text_container {
+      padding: 146px 50px 220px;
+      width: auto;
+
+      .component-title,
+      .component-subtitle {
+        font-size: 32px;
+        line-height: 38px;
+        width: 434px;
+      }
+
+      .component-description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        width: 405px;
+      }
+
+      .cta-action {
+        margin-top: 0;
+        .cta-btn {
+          flex-direction: row;
+          margin-top: 40px;
+
+          .cta__new-primary {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            padding: 12px 24px;
+            height: 42px;
+          }
+
+          .cta__new-outlined {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            width: max-content;
+            height: 42px;
+            padding: 12px 24px;
+
+            &::before {
+              height: 42px;
+              left: -6px;
+            }
+
+            &::after {
+              height: 42px;
+              right: -7px;
+            }
+          }
+        }
+      }
+    }
+
+    .logo-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-container {
+      text-align: right;
+
+      img {
+        width: 100%;
+        height: 715px;
+      }
+    }
+    .profile-banner-desktop {
+      display: block;
+    }
+    .profile-banner-mobile {
+      display: none;
+    }
+  }
+}

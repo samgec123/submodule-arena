@@ -1,0 +1,195 @@
+{
+    "definitions": [
+        {
+            "title": "Brand Philosophy",
+            "id": "brand-philosophy",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Brand Philosophy",
+                            "model": "brand-philosophy",
+                            "filter": "brand-philosophy"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Brand Philosophy Item",
+            "id": "brand-philosophy-item",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block/item",
+                        "template": {
+                            "name": "Brand Philosophy Item",
+                            "model": "brand-philosophy-item"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "brand-philosophy",
+            "fields": []
+        },
+        {
+            "id": "brand-philosophy-item",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "brand-philosophy-item_title",
+                    "value": "",
+                    "label": "Title"
+                },
+                {
+                    "component": "select",
+                    "name": "brand-philosophy-item_titleType",
+                    "value": "h2",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "h1",
+                            "value": "h1"
+                        },
+                        {
+                            "name": "h2",
+                            "value": "h2"
+                        },
+                        {
+                            "name": "h3",
+                            "value": "h3"
+                        },
+                        {
+                            "name": "h4",
+                            "value": "h4"
+                        },
+                        {
+                            "name": "h5",
+                            "value": "h5"
+                        },
+                        {
+                            "name": "h6",
+                            "value": "h6"
+                        }
+                    ]
+                },
+                {
+                    "component": "select",
+                    "name": "brand-philosophy-item-assets_selectType",
+                    "label": "Select Asset Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Video",
+                            "value": "video"
+                        },
+                        {
+                            "name": "Image",
+                            "value": "image"
+                        }
+                    ]
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "multi": false,
+                    "valueType": "string",
+                    "name": "brand-philosophy-item-assets_asset",
+                    "label": "Select Video OR Image"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "valueType": "string",
+                    "name": "brand-philosophy-item-assets_posterImage",
+                    "label": "Video Poster Image",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "brand-philosophy-item-assets_selectType"
+                            },
+                            "video"
+                        ]
+                    }
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "brand-philosophy-item-assets_imageAlt",
+                    "label": "Image Alt Text",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "brand-philosophy-item-assets_selectType"
+                            },
+                            "image"
+                        ]
+                    }
+                },
+                {
+                    "component": "boolean",
+                    "valueType": "boolean",
+                    "name": "brand-philosophy-item-assets_allowMobileVideo",
+                    "label": "Separate Video for Mobile",
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "brand-philosophy-item-assets_selectType"
+                            },
+                            "video"
+                        ]
+                    }
+                },
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "brand-philosophy-item-assets_videoMobile",
+                    "label": "Mobile Video",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "brand-philosophy-item-assets_allowMobileVideo"
+                            },
+                            true
+                        ]
+                    }
+                },
+                {
+                    "component": "number",
+                    "valueType": "number",
+                    "name": "brand-philosophy-item-assets_duration",
+                    "label": "Duration",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "brand-philosophy-item-assets_selectType"
+                            },
+                            "image"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "brand-philosophy",
+            "components": [
+                "brand-philosophy-item"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+  "definitions": [
+    {
+      "title": "Corporate Investor Card",
+      "id": "corporate-investor-card",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Corporate investor Card",
+              "model": "corporate-investor-card",
+              "filter": "corporate-investor-card",
+              "investor-card-info_titleType":"h2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "CTA with Heading",
+      "id": "corporate-investor-card-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "CTA with Heading",
+              "model": "corporate-investor-card-item",
+              "filter": "corporate-investor-card-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "corporate-investor-card",
+      "fields": [
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "multi": false,
+          "valueType": "string",
+          "name": "investor-card-assets_image",
+          "label": "Image"
+        },
+        {
+          "component": "text-input",
+          "name": "investor-card-assets_imageAlt",
+          "label": "Alt Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "investor-card-info_title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "investor-card-info_titleType",
+          "value": "h2",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "investor-card-info_pretitle",
+          "label": "Pretitle",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "investor-card-cta_link",
+          "label": "CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "investor-card-cta_linkText",
+          "label": "CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "investor-card-cta_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corporate-investor-card-item",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "heading",
+          "label": "Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "linkText",
+          "label": "CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "PDF Link",
+          "label": "PDF"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "corporate-investor-card",
+      "components": [
+        "corporate-investor-card-item"
+      ]
+    }
+  ]
+}

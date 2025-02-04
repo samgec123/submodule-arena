@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "title": "Contact Us Complaint",
+      "id": "contact-us-complaint",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Contact Us Complaint",
+              "model": "contact-us-complaint",
+              "theme": "light",
+              "style": "default",
+              "salesSubmissionText": "Click here to submit to Dealer Showroom Manager",
+              "servicesSubmissionText": "Click here to submit to Dealer Workshop In-charge",
+              "trueValueSubmissionText": "Click here to submit to True Value Manager",
+              "sparePartsSubmissionText": "Click here to submit to Distributor Operations Manager",
+              "personalInfoTitle": "Personal Information",
+              "dealerInfoTitle": "Dealer Information",
+              "vehicleInfoTitle": "Vehicle Information"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Register Interest",
+      "id": "register-interest",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Register Interest",
+              "model": "register-interest"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [],
+  "filters": []
+}

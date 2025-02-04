@@ -1,0 +1,110 @@
+{
+  "definitions": [
+    {
+      "title": "Nearest Dealer",
+      "id": "nearest-dealer",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Nearest Dealer",
+              "model":"nearest-dealer",
+              "filter": "nearest-dealer"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "nearest-dealer",
+      "fields": [
+        {
+          "component": "text",
+          "name": "nearest-dealer_title",
+          "value": "",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "nearest-dealer_titleType",
+          "value": "h3",
+          "label": "Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "nearest-dealer_subtitle",
+          "value": "",
+          "label": "Sub-Title",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "nearest-dealer_ctaText",
+          "label": "CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "nearest-dealer_ctaLink",
+          "label": "CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "nearest-dealer_ctaTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "nearest-dealer_errorMessage",
+          "label": "Error Message",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

@@ -1,0 +1,218 @@
+{
+  "definitions": [
+    {
+      "title": "Register Interest Page",
+      "id": "register-interest-page",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Register Interest Page",
+              "model": "register-interest-page"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "register-interest-page",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "rgt_title",
+          "value": "",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "rgt_titleType",
+          "value": "h3",
+          "label": "Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_description",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "rgt_signInText",
+          "value": "",
+          "label": "Sign In Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_PersonalTab_name",
+          "value": "",
+          "label": "Personal Details Tab Name",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_PersonalTab_selectText",
+          "value": "",
+          "label": "Personal Details Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_modelText",
+          "value": "",
+          "label": "Select Model Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_sendOtpButtonText",
+          "value": "",
+          "label": "Send OTP Button Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_nextButtonText",
+          "value": "",
+          "label": "Next Button Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_previousButtonText",
+          "value": "",
+          "label": "Previous Button Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_confirmButtonText",
+          "value": "",
+          "label": "Confirm Button Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_DealerTab_name",
+          "value": "",
+          "label": "Dealer Tab Name",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_DealerTab_selectText",
+          "value": "",
+          "label": "Dealer Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_termsAndConditionText",
+          "value": "",
+          "label": "Terms and Condition Text",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "multi": false,
+          "valueType": "string",
+          "name": "rgt_backgroundImage",
+          "label": "Backgroung Image",
+          "required": true
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_backgroundImageAltText",
+          "value": "",
+          "label": "backgroung Image Alt Text",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "multi": false,
+          "valueType": "string",
+          "name": "rgt_VehicleImage",
+          "label": "Default Vehicle Image",
+          "required": true
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_VehicleImageAltText",
+          "value": "",
+          "label": "Vehicle Image Alt Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_popupHeading",
+          "value": "",
+          "label": "Popup Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_popupSubHeading",
+          "value": "",
+          "label": "Popup SubHeading",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "rgt_popupDescription",
+          "value": "",
+          "label": "Popup Description",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "rgt_homeLink",
+          "label": "Home Link"
+        }
+      ]
+      
+    }
+  ],
+  "filters": [
+    {
+      "id": "register-interest-page",
+      "components": []
+    }
+  ]
+}

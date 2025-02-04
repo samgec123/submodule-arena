@@ -1,0 +1,118 @@
+{
+    "definitions": [
+        {
+            "title": "Highlights",
+            "id": "highlights",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Highlights",
+                            "filter": "highlights"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Highlight",
+            "id": "highlight",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block/item",
+                        "template": {
+                            "name": "Highlight",
+                            "model": "highlight"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "highlight",
+            "fields": [
+                {
+                    "component": "richtext",
+                    "name": "topDescription",
+                    "value": "",
+                    "label": "Top Description",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text-input",
+                    "name": "title",
+                    "value": "",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "richtext",
+                    "name": "bottomDescription",
+                    "value": "",
+                    "label": "Bottom Description",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "ctaLink",
+                    "label": "CTA Link"
+                },
+                {
+                    "component": "select",
+                    "name": "ctaTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                },
+                {
+                    "component": "select",
+                    "name": "backgroundColor",
+                    "value": "",
+                    "label": "Select Highlight Background Color",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Orange",
+                            "value": "orange"
+                        },
+                        {
+                            "name": "Blue",
+                            "value": "blue"
+                        },
+                        {
+                            "name": "Green",
+                            "value": "green"
+                        },
+                        {
+                            "name": "Pink",
+                            "value": "pink"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "highlights",
+            "components": [
+                "highlight"
+            ]
+        }
+    ]
+}

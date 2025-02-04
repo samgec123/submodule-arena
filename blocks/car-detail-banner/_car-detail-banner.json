@@ -1,0 +1,169 @@
+{
+    "definitions": [
+        {
+            "title": "Car Detail Banner",
+            "id": "car-detail-banner",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Car Detail Banner",
+                            "model": "car-detail-banner"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "car-detail-banner",
+            "fields": [
+                {
+                    "component": "text-input",
+                    "name": "car-detail-banner_modelId",
+                    "value": "",
+                    "label": "Car Model ID",
+                    "valueType": "string",
+                    "required": true
+                },
+                {
+                    "component": "text-input",
+                    "name": "car-detail-banner_primaryCtaText",
+                    "label": "Primary CTA Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "car-detail-banner_primaryCtaLink",
+                    "label": "Primary CTA Link"
+                },
+                {
+                    "component": "select",
+                    "name": "car-detail-banner_primaryTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                },
+                {
+                    "component": "text-input",
+                    "name": "car-detail-banner_secondaryCtaText",
+                    "label": "Secondary CTA Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "car-detail-banner_secondaryLink",
+                    "label": "Secondary CTA Link"
+                },
+                {
+                    "component": "select",
+                    "name": "car-detail-banner_secondaryTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                },
+                {
+                    "component": "richtext",
+                    "name": "car-detail-banner_exShowroomPriceText",
+                    "label": "Ex-Showroom Price Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "richtext",
+                    "name": "car-detail-banner_bannerCaption",
+                    "label": "Banner Caption",
+                    "valueType": "string"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType":"video",
+                    "valueType": "string",
+                    "name": "car-detail-banner_carvideo",
+                    "label": "Car Video",
+                    "multi": false
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "multi": false,
+                    "label": "Video Poster Image",
+                    "name": "car-detail-banner_posterImage",
+                    "valueType": "string"
+                },
+                {
+                    "component": "boolean",
+                    "valueType": "boolean",
+                    "name": "car-detail-banner_allowMobileVideo",
+                    "label": "Separate Video for Mobile",
+                    "value": false
+                },
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "car-detail-banner_videoMobile",
+                    "label": "Mobile Video",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "car-detail-banner_allowMobileVideo"
+                            },
+                            true
+                        ]
+                    }
+                },
+                {
+                    "component": "boolean",
+                    "valueType": "boolean",
+                    "name": "car-detail-banner_addMobileImage",
+                    "label": "Separate Image for Mobile",
+                    "value": false
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "valueType": "string",
+                    "name": "car-detail-banner_mobileImage",
+                    "label": "Mobile Image",
+                    "multi": false,
+                    "condition": {
+                        "===": [
+                            {
+                                "var": "car-detail-banner_addMobileImage"
+                            },
+                            true
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "filters": []
+}

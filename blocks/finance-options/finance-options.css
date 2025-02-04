@@ -1,0 +1,108 @@
+.section.finance-options-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.finance-options .teaser-content .teaser__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.finance-options .teaser-content .teaser__card {
+  text-decoration: none;
+  padding: 24px 16px;
+  border: 1px solid #D1D1D1;
+  position: relative;
+  padding-right: 90px;
+  height: 100%;
+}
+
+.finance-options .teaser-content a:nth-child(1) {
+  background: linear-gradient(359deg, rgba(215, 116, 58, 0.10) -48.53%, rgba(255, 255, 255, 0.10) 43.7%);
+}
+
+.finance-options .teaser-content a:nth-child(2) {
+  background: linear-gradient(359deg, rgba(57, 139, 215, 0.10) -48.53%, rgba(255, 255, 255, 0.10) 43.7%);
+}
+
+.finance-options .teaser-content a:nth-child(3) {
+  background: linear-gradient(359deg, rgba(0, 188, 164, 0.10) -48.53%, rgba(255, 255, 255, 0.10) 43.7%);
+}
+
+
+
+.finance-options .teaser-content .teaser__card .teaser__title * {
+  margin: 0;
+  color: var(--tertiary-black);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.finance-options .teaser-content .teaser__card .teaser__content .teaser__info .teaser__description p {
+  color: #000;
+  font-family: var(--body-font-arena);
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: .875rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  max-width: 200px;
+}
+
+.finance-options .teaser-content .teaser__card::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  padding: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M11.1075 38.9992L9 36.8917L31.8925 13.9992H18V10.9992H37V29.9992H34V16.1067L11.1075 38.9992Z" fill="%23171C8F"/></svg>');
+}
+
+.finance-options .teaser-content .teaser__card:hover::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M11.1075 38.9992L9 36.8917L31.8925 13.9992H18V10.9992H37V29.9992H34V16.1067L11.1075 38.9992Z" fill="white"/></svg>');
+  background-color: var(--primary-blue-700);
+}
+
+@media (width >=768px) {
+  .section.finance-options-container {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+  }
+
+  .finance-options .teaser-content .teaser__cards {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .finance-options .teaser-content .teaser__card {
+    padding: 40px 52px;
+    padding-right: 90px;
+  }
+
+  .finance-options .teaser-content .teaser__card .teaser__title * {
+    font-size: 1.5rem;
+  }
+
+  .finance-options .teaser-content .teaser__card .teaser__content .teaser__info .teaser__description p {
+    font-size: .875rem;
+    font-style: normal;
+    line-height: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (width < 1040px) and (width > 768px){
+  .finance-options .teaser-content .teaser__card {
+    padding: 40px 33px;
+    padding-right: 45px;
+  }
+}

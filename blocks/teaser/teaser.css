@@ -1,0 +1,151 @@
+.buyers-guide-teaser {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.buyers-guide-teaser .teaser__card {
+  position: relative;
+  height: 160px;
+  background: linear-gradient(90deg, #D5805B 0%, #CD6931 44.02%);
+}
+
+.buyers-guide-teaser .teaser__card>picture img {
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  object-position: -22px 22px;
+  height: 100%;
+  width: auto;
+}
+
+.buyers-guide-teaser .teaser__content {
+  position: absolute;
+  inset: 0;
+  left: 45% !important;
+  z-index: 1;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buyers-guide-teaser .teaser__title *,
+.buyers-guide-teaser .teaser__pretitle * {
+  color: var(--tertiary-white);
+  font-family: var(--body-font-arena);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 1.25rem;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.buyers-guide-teaser .teaser__description {
+  margin: 8px 0 0;
+}
+
+.buyers-guide-teaser .teaser__description * {
+  color: var(--tertiary-white);
+  font-family: var(--body-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1rem;
+  letter-spacing: -0.15px;
+  margin: 0;
+  max-width: 153px;
+}
+
+.buyers-guide-teaser .teaser__actions {
+  padding-top: .875rem;
+}
+
+.buyers-guide-teaser .teaser__actions .button-primary-light {
+  color: var(--tertiary-white);
+  font-family: var(--body-font-arena);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.125rem;
+  text-decoration: none;
+  text-decoration-line: none;
+  padding: .5rem 1rem;
+  background-color: var(--primary-blue-700);
+}
+
+@media (width >=768px) {
+  .buyers-guide-teaser {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+  }
+
+  .buyers-guide-teaser .teaser__card {
+    height: 360px;
+  }
+
+  .buyers-guide-teaser .teaser__title *,
+  .buyers-guide-teaser .teaser__pretitle * {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: 1.75rem;
+  }
+
+  .buyers-guide-teaser .teaser__description {
+    margin: 16px 0;
+  }
+
+  .buyers-guide-teaser .teaser__description * {
+    font-size: 1rem;
+    font-weight: var(--fw-300);
+    line-height: 1.25rem;
+    letter-spacing: -0.3px;
+    max-width: 100%;
+  }
+
+  .buyers-guide-teaser .teaser__actions .button-primary-light {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding: .75rem 1.5rem;
+  }
+
+  .buyers-guide-teaser .teaser__card>picture img {
+    object-position: center;
+    height: 92%;
+    top: 28px;
+  }
+
+  .buyers-guide-teaser .teaser__content {
+    left: 52% !important;
+  }
+
+}
+
+@media (width >=1200px) {
+
+  .buyers-guide-teaser .teaser__title *,
+  .buyers-guide-teaser .teaser__pretitle * {
+    font-family: var(--primary-font-arena);
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+
+  .buyers-guide-teaser .teaser__content {
+    left: 45% !important;
+  }
+
+  .buyers-guide-teaser .teaser__card>picture img {
+    height: 100%;
+    top: 0;
+  }
+  
+}
+
+@media (width >=1366px) {
+
+  .buyers-guide-teaser .teaser__title *,
+  .buyers-guide-teaser .teaser__pretitle * {
+    font-size: 2rem;
+    line-height: normal;
+  }
+}

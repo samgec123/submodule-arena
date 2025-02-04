@@ -1,0 +1,1839 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "title": "Button",
+          "id": "button",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/button/v1/button",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/title/v1/title",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA with Icon",
+          "id": "ctaWithIcon",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "CTA with Icon",
+                  "model": "ctaWithIcon",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser",
+                  "model": "teaser",
+                  "filter": "teaser",
+                  "title": "Teaser Title",
+                  "description": "<p>This is <b>description</b></p>",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "id": "forms",
+      "components": [
+        {
+          "title": "Contact Us Complaint",
+          "id": "contact-us-complaint",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Contact Us Complaint",
+                  "model": "contact-us-complaint",
+                  "theme": "light",
+                  "style": "default",
+                  "salesSubmissionText": "Click here to submit to Dealer Showroom Manager",
+                  "servicesSubmissionText": "Click here to submit to Dealer Workshop In-charge",
+                  "trueValueSubmissionText": "Click here to submit to True Value Manager",
+                  "sparePartsSubmissionText": "Click here to submit to Distributor Operations Manager",
+                  "personalInfoTitle": "Personal Information",
+                  "dealerInfoTitle": "Dealer Information",
+                  "vehicleInfoTitle": "Vehicle Information"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Register Interest",
+          "id": "register-interest",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Register Interest",
+                  "model": "register-interest"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Arena Help Me Select",
+          "id": "arena-help-me-select",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Arena Help Me Select",
+                  "filter": "arena-help-me-select"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Banner Carousel",
+          "id": "banner-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Banner Carousel",
+                  "model": "banner-carousel",
+                  "filter": "banner-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Banner Carousel Car",
+          "id": "banner-carousel-car",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Banner Carousel Car",
+                  "model": "banner-carousel-car"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Benefit Cards",
+          "id": "benefit-cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Benefit Cards",
+                  "model": "benefit-cards",
+                  "filter": "benefit-cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Benefit Card",
+          "id": "benefit-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Benefit Card",
+                  "model": "benefit-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Best Deals",
+          "id": "best-deals",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Best Deals",
+                  "model": "best-deals",
+                  "filter": "best-deals"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Book Showroom Visit",
+          "id": "book-showroom-visit",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Book Showroom Visit",
+                  "model": "book-showroom-visit",
+                  "filter": "book-showroom-visit"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Book Test Drive",
+          "id": "book-test-drive",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Book Test Drive",
+                  "model": "book-test-drive"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Brand Header",
+          "id": "brand-header",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Brand Header",
+                  "model": "brand-header",
+                  "filter": "brand-header"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Brand Philosophy",
+          "id": "brand-philosophy",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Brand Philosophy",
+                  "model": "brand-philosophy",
+                  "filter": "brand-philosophy"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Brand Philosophy Item",
+          "id": "brand-philosophy-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Brand Philosophy Item",
+                  "model": "brand-philosophy-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Compare",
+          "id": "car-compare",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Compare",
+                  "model": "car-compare"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Config",
+          "id": "car-config",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Config",
+                  "model": "car-config",
+                  "target": "_self",
+                  "titleType": "h2",
+                  "exteriorLabel": "Exterior",
+                  "interiorLabel": "Interior"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Detail Banner",
+          "id": "car-detail-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Detail Banner",
+                  "model": "car-detail-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Detail Feature",
+          "id": "car-detail-feature",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Detail Feature",
+                  "model": "car-detail-feature"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Filter V2",
+          "id": "car-filter-v2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Filter V2",
+                  "model": "car-filter-v2",
+                  "title": "Car Filter V2",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Filter",
+          "id": "car-filter",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Filter",
+                  "model": "car-filter",
+                  "title": "Car Filter",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Contact",
+          "id": "contact",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Contact",
+                  "model": "contact",
+                  "filter": "contact"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Banner",
+          "id": "corporate-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Corporate Banner",
+                  "model": "corporate-banner",
+                  "filter": "corporate-banner",
+                  "corporate-banner_titleType": "h4"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Banner Item",
+          "id": "corporate-banner-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Corporate Banner Item",
+                  "model": "corporate-banner-item",
+                  "corporate-banner-item-info_titleType": "h3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Business Card",
+          "id": "corporate-business-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Corporate Business Card",
+                  "model": "corporate-business-card",
+                  "filter": "corporate-business-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Card Item",
+          "id": "corporate-business-card-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Card Item",
+                  "model": "corporate-business-card-item",
+                  "filter": "corporate-business-card-item",
+                  "business-card-info_titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Investor Card",
+          "id": "corporate-investor-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Corporate investor Card",
+                  "model": "corporate-investor-card",
+                  "filter": "corporate-investor-card",
+                  "investor-card-info_titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA with Heading",
+          "id": "corporate-investor-card-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "CTA with Heading",
+                  "model": "corporate-investor-card-item",
+                  "filter": "corporate-investor-card-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Slider",
+          "id": "corporate-slider",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Corporate Slider",
+                  "model": "corporate-slider",
+                  "filter": "corporate-slider"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Timeline",
+          "id": "corporate-timeline",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Corporate Timeline",
+                  "model": "corporate-timeline",
+                  "filter": "corporate-timeline"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Corporate Timeline Item",
+          "id": "corporate-timeline-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Corporate Timeline Item",
+                  "model": "corporate-timeline-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Csr Programs Awards",
+          "id": "csr-programs-awards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Csr Programs Awards",
+                  "filter": "csr-programs-awards",
+                  "model": "csr-programs-awards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA",
+          "id": "cta",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "CTA",
+                  "model": "cta"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dealer Cards",
+          "id": "dealer-cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Dealer Cards",
+                  "filter": "dealer-cards",
+                  "model": "dealer-cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dealer Locator Filter",
+          "id": "dealer-locator-filter",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Dealer Locator Filter",
+                  "model": "dealer-locator-filter"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Disclaimer FAQ",
+          "id": "disclaimer-faq",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Disclaimer FAQ",
+                  "model": "disclaimer-faq",
+                  "filter": "disclaimer-faq",
+                  "faq_title": "Disclaimer FAQ",
+                  "faq_titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Disclaimer FAQ Item",
+          "id": "disclaimer-faq-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Disclaimer FAQ Item",
+                  "model": "disclaimer-faq-item",
+                  "question": "Lorem Ipsum",
+                  "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Ebooking",
+          "id": "ebooking",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Ebooking"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Engine Feature",
+          "id": "engine-feature",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Engine Feature",
+                  "filter": "engine-feature",
+                  "model": "engine-feature"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "engine-hotspot",
+          "id": "engine-hotspot",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "engine-hotspot",
+                  "filter": "engine-hotspot",
+                  "model": "engine-hotspot"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Engine Tabs",
+          "id": "engine-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Engine Tabs",
+                  "filter": "engine-tabs",
+                  "model": "engine-tabs",
+                  "title": "engine Tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Explore Banner v2",
+          "id": "explore-banner-v2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Explore Banner v2",
+                  "model": "explore-banner-v2",
+                  "title": "explore-banner-v2",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Feature Tabs",
+          "id": "feature-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Feature Tabs",
+                  "filter": "feature-tabs",
+                  "model": "feature-tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Finance Entry Point",
+          "id": "finance-entry-point",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Finance Entry Point",
+                  "model": "finance-entry-point",
+                  "filter": "finance-entry-point"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Finance Options",
+          "id": "finance-options",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Finance Options",
+                  "filter": "finance-options",
+                  "model": "finance-options"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight Item",
+          "id": "highlight-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlight Item",
+                  "model": "highlight-item",
+                  "title": "Highlight Item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlights",
+          "id": "highlights",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlights",
+                  "filter": "highlights"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight",
+          "id": "highlight",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Highlight",
+                  "model": "highlight"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hotspot Video",
+          "id": "hotspot-video",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hotspot Video",
+                  "model": "hotspot-video"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hotspot",
+          "id": "hotspot",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hotspot",
+                  "filter": "hotspot",
+                  "model": "hotspot"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Icon with Title",
+          "id": "icontitle",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "IconTitle",
+                  "model": "icontitle"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Image Banner",
+          "id": "image-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Image Banner",
+                  "model": "image-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Link Column",
+          "id": "link-column",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Link Column",
+                  "filter": "link-column",
+                  "model": "link-column",
+                  "orientation": "link-column-vertical"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Loan Calculator",
+          "id": "loan-calculator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Loan Calculator",
+                  "model": "loan-calculator"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Location",
+          "id": "location",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Location",
+                  "model": "location",
+                  "filter": "location"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Logo List",
+          "id": "logo-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Logo List"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Logo",
+          "id": "logo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Logo",
+                  "model": "logo"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "MFE POC",
+          "id": "mfe-poc",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "MFE POC",
+                  "filter": "mfe-poc"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nearest Dealer",
+          "id": "nearest-dealer",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nearest Dealer",
+                  "model": "nearest-dealer",
+                  "filter": "nearest-dealer"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Order History Tab",
+          "id": "order-history-tab",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Order History Tab",
+                  "model": "order-history-tab",
+                  "filter": "order-history-tab"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Privacy Modal",
+          "id": "privacy-modal",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Privacy Modal",
+                  "filter": "privacy-modal",
+                  "model": "privacy-modal"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Profile Dealership Activities",
+          "id": "profile-dealership-activities",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Profile Dealership Activities",
+                  "filter": "profile-dealership-activities",
+                  "model": "profile-dealership-activities"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Profile Hero Banner",
+          "id": "profile-hero-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Profile Hero Banner",
+                  "model": "profile-hero-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Profile Overview Form",
+          "id": "profile-overview-form",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Profile Overview Form",
+                  "model": "profile-overview-form",
+                  "profile-overview-form_style": "no-label"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Register Interest Page",
+          "id": "register-interest-page",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Register Interest Page",
+                  "model": "register-interest-page"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Search header",
+          "id": "search-header",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Search header",
+                  "model": "search-header",
+                  "filter": "search-header",
+                  "ghostText": "Search for Cars, blog",
+                  "searchTargetUrl": "/en/search",
+                  "quickSearch": "Quick searches",
+                  "recommendedList": ""
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Section Navigator",
+          "id": "section-navigator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Section Navigator",
+                  "filter": "section-navigator"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Sign In",
+          "id": "sign-in",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Sign In",
+                  "model": "sign-in",
+                  "filter": "sign-in",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Slider",
+          "id": "slider",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Slider",
+                  "model": "slider",
+                  "filter": "slider"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser List",
+          "id": "teaser-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser List",
+                  "filter": "teaser-list",
+                  "model": "teaser-list",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser",
+                  "model": "teaser",
+                  "filter": "teaser",
+                  "title": "Teaser Title",
+                  "description": "<p>This is <b>description</b></p>",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Variant Carousel",
+          "id": "variant-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Variant Carousel",
+                  "model": "variant-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Variant Detail Tab",
+          "id": "variant-detail-tab",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Variant Detail Tab",
+                  "model": "variant-detail-tab"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Variant Listing",
+          "id": "variant-listing",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Variant Listing",
+                  "model": "variant-listing"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video Teaser",
+          "id": "video-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video Teaser",
+                  "model": "video-teaser"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video",
+          "id": "video",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video",
+                  "model": "video"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Visual Indicator",
+          "id": "visual-indicator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Visual Indicator",
+                  "model": "visual-indicator"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Smart Finance",
+      "id": "smart-finance",
+      "components": [
+        {
+          "title": "Collapsible Text",
+          "id": "collapsible-text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Collapsible Text",
+                  "model": "collapsible-text",
+                  "filter": "collapsible-text",
+                  "collapsible-text_titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Contact Support List",
+          "id": "contact-support-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Contact Support List",
+                  "model": "contact-support-list",
+                  "filter": "contact-support-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Contact Support",
+          "id": "contact-support",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Contact Support",
+                  "model": "contact-support"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Customer Detail",
+          "id": "customer-detail",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Customer-Detail",
+                  "model": "customer-detail"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dealer List",
+          "id": "dealer-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Dealer-list",
+                  "filter": "dealer-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dealer",
+          "id": "dealer",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Dealer",
+                  "model": "dealer"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "FAQ",
+          "id": "faq",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "FAQ",
+                  "model": "faq",
+                  "filter": "faq",
+                  "faq_title": "Frequently asked questions",
+                  "faq_titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "FAQ Item",
+          "id": "faq-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "FAQ Item",
+                  "model": "faq-item",
+                  "question": "Lorem Ipsum",
+                  "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Filter Form",
+          "id": "filter-form",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Filter Form",
+                  "model": "filter-form"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Financier Mapping",
+          "id": "financier-mapping",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Financier Mapping",
+                  "model": "financier-mapping"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Image Carousel",
+          "id": "image-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Image Carousel",
+                  "filter": "image-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Image Slide",
+          "id": "image-slide",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {
+                  "name": "Image Slide",
+                  "model": "image-slide",
+                  "image_desktop": "",
+                  "image_mobile": "",
+                  "image_mobileAlt": ""
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Journey Carousel",
+          "id": "journey-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Journey Carousel",
+                  "model": "journey-carousel",
+                  "filter": "journey-carousel",
+                  "common_headingType": "h3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Journey Carousel Item",
+          "id": "journey-carousel-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Journey Carousel Item",
+                  "model": "journey-carousel-item",
+                  "content_headingType": "h3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Loan Application",
+          "id": "loan-application",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Loan Application",
+                  "filter": "loan-application",
+                  "step1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Applicant Details Step",
+                    "model": "applicant-details",
+                    "classes": "loan-application-step"
+                  },
+                  "step2": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Address Details Step",
+                    "model": "address-details",
+                    "classes": "loan-application-step"
+                  },
+                  "step3": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Upload Documents Step",
+                    "model": "upload-documents",
+                    "classes": "loan-application-step"
+                  },
+                  "step4": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Finalize Loan Step",
+                    "model": "finalize-loan",
+                    "classes": "loan-application-step"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Loan Compare",
+          "id": "loan-compare",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Loan-Compare",
+                  "model": "loan-compare"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Loan Status",
+          "id": "loan-status",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Loan Status",
+                  "model": "loan-status"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Model Selection",
+          "id": "model-selection",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Model Selection",
+                  "model": "model-selection"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Personal Details",
+          "id": "personal-details",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Personal Details",
+                  "model": "personal-details"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Pre approved",
+          "id": "pre-approved",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Pre-approved",
+                  "model": "pre-approved"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Price Summary",
+          "id": "price-summary",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Price Summary",
+                  "model": "price-summary"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "SF Dealer Locator",
+          "id": "sf-dealer-locator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "SF Dealer Locator",
+                  "model": "sf-dealer-locator"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "SmartFinance Joureny Start",
+          "id": "sf-joureny-start",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "SmartFinance Joureny Start",
+                  "filter": "sf-joureny-start",
+                  "step1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Request OTP Step",
+                    "model": "laf-request-otp-step",
+                    "classes": "sf-journey-start-step"
+                  },
+                  "step2": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Restore Previous Journey Step",
+                    "model": "laf-restore-previous-journey-step",
+                    "classes": "sf-journey-start-step"
+                  },
+                  "step3": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block",
+                    "name": "Basic User Details Step",
+                    "model": "laf-user-basic-details-step",
+                    "classes": "sf-journey-start-step"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "User Profile",
+          "id": "user-profile",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "User Profile",
+                  "model": "user-profile"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Variant Detail",
+          "id": "variant-detail",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Variant Detail",
+                  "model": "variant-detail"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Common Blocks",
+      "id": "common-blocks",
+      "components": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards",
+                  "filter": "cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Card",
+                  "model": "card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "columns": "2",
+                  "rows": "1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Fragment",
+                  "model": "fragment"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero",
+                  "model": "hero"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

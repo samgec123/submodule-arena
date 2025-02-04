@@ -1,0 +1,85 @@
+{
+  "definitions": [
+  ],
+  "models": [
+    {
+      "id": "register-interest",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "register-interest_title",
+          "value": "",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_subtitle",
+          "value": "",
+          "label": "SubTitle",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_sendOtpButton",
+          "value": "",
+          "label": "Send OTP Button",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "register-interest_tAndCText",
+          "value": "",
+          "label": "Terms and Conditions Text",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "register-interest_signInText",
+          "label": "Sign-In Text",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "register-interest_userText",
+          "label": "Register User Welcome Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_popupHeading",
+          "value": "",
+          "label": "Popup Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_popupTitle",
+          "value": "",
+          "label": "Popup Title",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_popupDescription",
+          "value": "",
+          "label": "Popup Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "register-interest_dealerTitle",
+          "value": "",
+          "label": "Dealer Title",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "register-interest",
+      "components": []
+    }
+  ]
+}

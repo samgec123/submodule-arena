@@ -1,0 +1,206 @@
+.car-compare-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.compare-section {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.compare-section .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compare-section .title-wrapper .compare-title * {
+  color: #1D1D1D;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: normal;
+  margin: 0;
+}
+
+.compare-section .title-wrapper .button {
+  position: absolute !important;
+  bottom: 0;
+  right: 24px;
+}
+
+.compare-section .compare-container .divider {
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="38" height="64" viewBox="0 0 38 64" fill="none"><path d="M0.606256 62.9667L36.8691 1.00002" stroke="url(%23paint0_linear_3598_1508)"/><defs><linearGradient id="paint0_linear_3598_1508" x1="38.4111" y1="0.999854" x2="-2.61704" y2="62.9048" gradientUnits="userSpaceOnUse"><stop offset="0.03" stop-color="%23A9A9A9" stop-opacity="0"/><stop offset="0.555"/><stop offset="0.966342" stop-color="%23A9A9A9" stop-opacity="0"/></linearGradient></defs></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.car-current-option,
+.car-compare-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.compare-section .compare-container .car-image {
+  width: 152px;
+  height: 77px;
+  position: relative;
+  z-index: 10;
+}
+
+.compare-section .compare-container .car-image img {
+  height: 100%;
+  width: auto;
+}
+
+.compare-section .compare-container {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  margin-top: 30px;
+
+  input,
+  select {
+    border-top: none;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8d8d8d;
+    border-radius: 0;
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 20px;
+    padding-left: 0;
+    padding-right: 20px;
+    background-color: transparent;
+  }
+}
+
+.left-wrapper,
+.right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.car-details {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.car-details select {
+  width: 100%;
+  padding: 8px 2px;
+  margin-top: 18px;
+  appearance: none;
+}
+ 
+.car-details select option{
+  padding: 5px;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select::after {
+  --size: 2px;
+
+  position: absolute;
+  content: "";
+  pointer-events: none;
+  top: 30px;
+  right: 6px;
+  border-right: var(--size) solid rgba(0, 0, 0, 0.925);
+  border-bottom: var(--size) solid rgba(0, 0, 0, 0.954);
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.custom-select.open::after {
+  top: 35px;
+  transform: rotate(-135deg);
+}
+
+/* Desktop layout */
+@media (width >=768px) {
+  .car-compare-container {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+
+  }
+
+  .car-compare-container .car-compare-wrapper {
+    background: linear-gradient(359deg, rgba(255, 255, 255, 6.8) 27.76%, rgba(202, 202, 202, 0.80) 36.66%, rgba(255, 255, 255, 0.80) 68.52%);
+  }
+
+  .compare-section .title-wrapper .compare-title * {
+    font-size: 2rem;
+  }
+
+  .compare-section .title-wrapper .button {
+    position: static !important;
+    bottom: 0;
+    right: inherit;
+  }
+
+  .compare-section .compare-container .car-image {
+    width: 100%;
+    height: clamp(140px, 16vw, 200px);
+    text-align: center;
+  }
+
+  .compare-section .compare-container .car-image img {
+    height: 100%;
+    width: auto;
+  }
+
+  .compare-section .compare-container .divider {
+    position: static;
+    width: 20%;
+    height: 250px;
+    left: 50%;
+    top: 10px;
+    transform: inherit;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="177" height="300" viewBox="0 0 177 300" fill="none"><path d="M0.954348 299.745L175.78 1.00071" stroke="url(%23paint0_linear_3667_10685)"/><defs><linearGradient id="paint0_linear_3667_10685" x1="183.213" y1="0.999882" x2="-14.5853" y2="299.447" gradientUnits="userSpaceOnUse"><stop offset="0.03" stop-color="%23A9A9A9" stop-opacity="0"/><stop offset="0.555"/><stop offset="0.966342" stop-color="%23A9A9A9" stop-opacity="0"/></linearGradient></defs></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .car-current-option,
+  .car-compare-option {
+    gap: 12px;
+  }
+
+  .compare-section .compare-container {
+    display: flex;
+    gap: 0;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .left-wrapper,
+  .right-wrapper {
+    width: 40%;
+  }
+
+  .compare-section {
+    padding-bottom: 0px;
+  }
+}

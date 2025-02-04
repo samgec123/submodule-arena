@@ -1,0 +1,483 @@
+.view360__container {
+  padding: 2rem 1.25rem;
+
+  .view360__top-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .view360__title {
+    color: var(--tertiary-black);
+    font-family: var(--primary-font-arena);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0.64px;
+    padding-right: 3.5rem;
+    margin: 0;
+  }
+
+  .view360__left-section {
+    display: none;
+  }
+
+  .view360__right-section {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    align-self: flex-end;
+
+
+
+
+
+    .cta__primary {
+      width: fit-content;
+      margin-top: 16px;
+
+      a::after {
+        display: none;
+        filter: invert(1);
+        scale: 1.25;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  .view360__description>*:first-child {
+    font-family: var(--primary-font-arena);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+    max-width: 65%;
+  }
+
+  .view360__description p {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .choose-car-theme-color {
+    color: #7A7A7A;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--body-font-arena);
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  .view360__bottom-section {
+    .view360__colors-wrapper {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      width: 400px;
+
+      .view360__colors-list {
+        display: flex;
+        gap: 0.75rem;
+        width: 219px;
+        overflow: auto hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        position: relative;
+
+        div {
+          cursor: pointer;
+          flex-shrink: 0;
+          transition: transform 0.3s ease;
+
+          &::before {
+            color: var(--secondary-main);
+            font-family: var(--primary-font-arena);
+            font-size: .75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1rem;
+            position: absolute;
+            top: 36px;
+          }
+
+          &.selected {
+            &::after {
+              content: "";
+              width: 24px;
+              height: 24px;
+              margin: auto;
+              position: relative;
+              top: 5px;
+              display: flex;
+              background-image: url(../../icons/check.svg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+
+            &::before {
+              content: attr(data-content);
+            }
+          }
+        }
+      }
+
+      .slide-icon {
+        cursor: pointer;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .slide-right {
+        background-image: url(../../icons/slide_right.svg);
+      }
+
+      .slide-left {
+        background-image: url(../../icons/slide-left.svg);
+      }
+    }
+
+    .view360__tabs-wrapper {
+      width: 100%;
+      text-align: center;
+      margin-top: 3.25rem;
+
+      .view360__tabs {
+        display: inline-block;
+        border-bottom: 1px solid var(--tertiary-medium-grey);
+
+        .view360__tab-label {
+          color: var(--tertiary-medium-grey);
+          font-family: var(--primary-font-arena);
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.25rem;
+          text-align: center;
+          padding: 0.75rem 3rem;
+          display: inline-block;
+          cursor: pointer;
+          position: relative;
+
+          &::after {
+            border-bottom: 1px solid #b2b2b2;
+            display: inline-block;
+          }
+
+          &.view360__tab-label--active {
+            color: var(--primary-main);
+            font-weight: 500;
+            border-bottom: 2px solid var(--primary-main);
+          }
+        }
+      }
+    }
+
+    .view360__content {
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+      position: relative;
+
+      .view360-icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 36px;
+        align-items: center;
+
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          display: inline-block;
+          background-image: url(../../icons/switch-360-circle.svg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          background-image: url(../../icons/switch-360.svg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 24px;
+          height: 24px;
+          top: 6px;
+          left: 6px;
+        }
+
+        span {
+          font-family: var(--primary-font-arena);
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: var(--primary-main);
+        }
+      }
+
+      #view360-canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: grab;
+        margin-top: -60px;
+
+        &:active {
+          cursor: grabbing;
+        }
+      }
+    }
+  }
+}
+
+.car-config-container {
+  background: url(../../icons/car-congif-bg.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .car-config-wrapper {
+    background: linear-gradient(185deg, #FFF -11.15%, rgba(255, 255, 255, 0.30) 45.05%, rgba(255, 255, 255, 0.00) 97.09%);
+
+    .car-config {
+      background: linear-gradient(2deg, #FFF -11.15%, rgba(255, 255, 255, 50.50) 10.05%, rgba(255, 255, 255, 0.00) 75.09%);
+    }
+  }
+
+}
+
+.car-config-circleBtn {
+  width: 40px;
+  height: 40px;
+  background: var(--secondary-gray-10);
+  bottom: 220px;
+  left: 47%;
+  position: absolute;
+  box-shadow: 0px 2px 12.5px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  .arrow-left,
+  .arrow-right {
+    font-size: .75rem;
+    cursor: pointer;
+  }
+
+  .arrow-left::after {
+    content: '';
+    background: url(../../icons/car-details-arrow_right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 24px;
+    display: block;
+  }
+
+  .arrow-right::after {
+    content: '';
+    background: url(../../icons/car-details-arrow_left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 24px;
+    display: block;
+  }
+}
+
+.view360__colors-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.swatch-color {
+  cursor: pointer;
+  border: 1px solid var(--tertiary-medium-grey);
+}
+
+.view360__not-available {
+  width: 280px;
+  display: inline-flex;
+  padding: 8px 0px;
+  align-items: flex-start;
+  gap: 12px;
+  max-height: 40px;
+}
+
+.view360__not-available p {
+  margin: 0px;
+}
+
+.view360__not-available svg {
+  height: 20px;
+  width: 20px;
+}
+
+.view360__not-available .svg-div {
+  margin-top: -3px;
+}
+
+@media (width >=768px) {
+  .view360__container {
+    padding: 6rem 3.5rem 1rem;
+
+    .view360__top-section {
+      justify-content: space-between;
+      align-items: stretch;
+      flex-direction: row;
+    }
+
+    .view360__title {
+      color: var(--font-primary-nexa);
+      font-family: var(--primary-font-arena);
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.07rem;
+      width: 25.125rem;
+      padding: 0;
+    }
+
+    .view360__right-section {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: stretch;
+      width: 34%;
+
+
+
+      .view360__description p {
+        font-size: .875rem;
+        font-style: normal;
+        line-height: 1.25rem;
+      }
+
+      .view360__description>*:first-child {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1D1D1D;
+        line-height: normal;
+        width: 315px;
+      }
+
+      .cta__primary {
+        align-self: flex-start;
+
+        .view360__primary-btn {
+          padding: .75rem 1.5rem;
+        }
+      }
+    }
+
+    .choose-car-theme-color {
+      font-size: .875rem;
+      line-height: 140%;
+    }
+
+    .car-config-circleBtn {
+      bottom: 25px;
+      width: 80px;
+      height: 80px;
+      padding: 15px;
+
+      .arrow-left,
+      .arrow-right {
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .arrow-left::after,
+      .arrow-right::after {
+        width: 40px;
+        height: 35px;
+      }
+    }
+
+    .view360__bottom-section {
+      flex-wrap: wrap;
+      align-items: center;
+
+      .view360__tabs-wrapper {
+        order: 1;
+        width: unset;
+        flex-grow: 1;
+        text-align: left;
+        margin: 0;
+
+        .view360__tabs {
+          .view360__tab-label {
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem;
+            text-align: center;
+            padding: 0.75rem 1.5rem;
+          }
+        }
+      }
+
+      .view360__colors-wrapper {
+        order: 2;
+        min-width: 316px;
+      }
+
+      .view360__content {
+        order: 3;
+        flex-basis: 100%;
+
+        .view360-icon {
+          top: 4.5rem;
+        }
+      }
+    }
+  }
+
+  .car-config-container {
+    background-position: left;
+  }
+}
+
+@media (width >=1200px) {
+  .view360__container .view360__title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    letter-spacing: 1.28px;
+  }
+
+  .view360__container .view360__description p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .view360__container {
+    .car-config-circleBtn {
+      bottom: 15px;
+    }
+  }
+}

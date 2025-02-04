@@ -1,0 +1,509 @@
+<div class="book-test-drive block" data-block-name="book-test-drive" data-block-status="loaded">
+    <div class="container">
+        <div class="bookTestDrive__title">
+            <h5 id="book-a-test-drive-in-seconds">Book a Test Drive in Seconds!</h5>
+        </div>
+        <div class="stepper-container">
+            <div class="stepper">
+                <div class="step selected" data-step="1">1. Select Vehicle</div>
+                <div class="step" data-step="2">2. Select Dealership</div>
+                <div class="step" data-step="3">3. Select Date &amp; Time</div>
+                <div class="step" data-step="4">4. Personal Details</div>
+                <div class="step" data-step="5">5. Overview</div>
+            </div>
+
+            <div class="content">
+                <div class="step-content active" id="step1">
+                    <div class="vehicle-form">
+                        <div class="background__image"><img loading="eager" alt="Vehicle Tab Background Image"
+                                src="./media_171369efff13b33845170941b4a7f3576fa4eae54.jpeg?width=750&amp;format=jpeg&amp;optimize=medium">
+                        </div>
+                        <div class="left-section">
+                            <p class="select-vehicle-title">Select the vehicle you want to test drive!</p>
+
+                            <div class="form-dropdown  form-field ">
+
+                                <select class="form-dropdown-select " id="model" name="model"
+                                    aria-labelledby="model-label" style="color: rgb(147, 147, 147);">
+                                    <option value="" disabled="" selected="">Select Vehicle</option>
+                                    <option value="AT">Alto K10</option>
+                                    <option value="VZ">Brezza</option>
+                                    <option value="CL">Celerio</option>
+                                    <option value="VR">Eeco</option>
+                                    <option value="ER">Ertiga</option>
+                                    <option value="SP">S-presso</option>
+                                    <option value="SR">Swift</option>
+                                    <option value="DR">Swift Desire</option>
+                                    <option value="WA">Wagonr</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-dropdown  form-field ">
+
+                                <select class="form-dropdown-select " id="fuel-type" name="fuel-type"
+                                    aria-labelledby="fuel-type-label" data-placeholder="Select fuel type&nbsp;"
+                                    style="color: rgb(147, 147, 147);">
+                                    <option value="" disabled="" selected="">Select fuel type&nbsp;</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-radio transmission form-field ">
+
+                                <label class="form-radio-group-label" for="transmission" id="transmission-label">
+                                    Select Transmission
+
+                                </label>
+
+                                <div class="custom-radio-container">
+                                    <div class="form-radio-item sameline transmission customRadio">
+                                        <input type="radio" name="transmission" checked="" value="A" id="Automatic"
+                                            aria-labelledby="transmission-label">
+                                        <label class="form-radio-label automatic">Automatic</label>
+
+                                    </div>
+
+                                    <div class="form-radio-item sameline transmission customRadio">
+                                        <input type="radio" name="transmission" value="M" id="Manual"
+                                            aria-labelledby="transmission-label">
+                                        <label class="form-radio-label manual">Manual</label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right-section">
+                            <div class="car__image"><img loading="lazy" alt="Book Test Drive Image"
+                                    src="./media_137dc882b9a82054d6ea4250ba8f06d5482aebb94.jpeg?width=750&amp;format=jpeg&amp;optimize=medium">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content" id="step2">
+                    <div class="dealership-step">
+                        <div class="dealership-form">
+                            <div class="dealership-form-column-1">
+                                <p class="select-dealer-title">Select a Dealership for your{carName} test drive</p>
+                                <div class="dealership-form-fields">
+
+                                    <div class="form-input pin-code form-field ">
+
+                                        <input type="text" id="pin-code" name="pinCode" placeholder="Pin Code"
+                                            aria-labelledby="pin-code-label" autocomplete="off" value="492001">
+
+
+
+                                    </div>
+
+
+                                    <div class="form-input  form-field ">
+
+                                        <input type="text" id="city" name="city" placeholder="City"
+                                            aria-labelledby="city-label" autocomplete="off" value="Abhanpur">
+
+
+
+                                    </div>
+
+                                    <div class="inner-detect-location__box_tab">
+                                        <p class="detect-location__text">
+                                            Detect your location
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dealership-form-column-2">
+
+                                <div class="container__dealers">
+                                    <div class="dealer__list__container"><label class="dealer__card"><input type="radio"
+                                                name="dealer" value="SKY AUTOMOBILES" class="dealer__radio">
+                                            <div class="dealership__top__info">
+                                                <p class="dealer__name">Sky Automobiles</p>
+                                                <p class="dealer__distance">0.00 Km Away</p>
+                                            </div>
+                                            <p class="dealer__address">Raipur road, near gramin bank</p>
+                                        </label><label class="dealer__card"><input type="radio" name="dealer"
+                                                value="SKY AUTOMOBILES" class="dealer__radio">
+                                            <div class="dealership__top__info">
+                                                <p class="dealer__name">Sky Automobiles</p>
+                                                <p class="dealer__distance">0.23 Km Away</p>
+                                            </div>
+                                            <p class="dealer__address">Avantivihar telibandha</p>
+                                        </label><label class="dealer__card"><input type="radio" name="dealer"
+                                                value="SKY AUTOMOBILES" class="dealer__radio">
+                                            <div class="dealership__top__info">
+                                                <p class="dealer__name">Sky Automobiles</p>
+                                                <p class="dealer__distance">0.24 Km Away</p>
+                                            </div>
+                                            <p class="dealer__address">Magneto-The mall, labhandi g.e. road, raipur</p>
+                                        </label><label class="dealer__card"><input type="radio" name="dealer"
+                                                value="SPARSH AUTOMOBILES PVT LTD" class="dealer__radio">
+                                            <div class="dealership__top__info">
+                                                <p class="dealer__name">Sparsh Automobiles Pvt Ltd</p>
+                                                <p class="dealer__distance">2.39 Km Away</p>
+                                            </div>
+                                            <p class="dealer__address">Opp. union bank, main road,pandri</p>
+                                        </label></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content" id="step3">
+
+
+                    <div class="steper-content-row">
+                        <div class="steper-content-col column-1 column-hide-xs">
+                            <div class="bookTestDrive__title">
+                                <h3>Details so far:</h3>
+                            </div>
+                            <div class="steper-cards">
+                                <div class="book-td-card d-flex">
+                                    <div class="selected-car-details">
+                                        <p></p>
+                                        <p class="selected-car-type"><span
+                                                class="transmission-type">Automatic</span><span
+                                                class="divider"></span><span class="fuel-type"></span></p>
+                                    </div>
+                                    <div class="selected-car-image">
+                                        <img loading="lazy" alt="Book Test Drive Image"
+                                            src="./media_137dc882b9a82054d6ea4250ba8f06d5482aebb94.jpeg?width=750&amp;format=jpeg&amp;optimize=medium">
+                                    </div>
+                                    <a class="ctrl-edit-btn edit-select-vehicle" id="edit-vehicle-btn">Edit</a>
+                                </div>
+                                <div class="book-td-card">
+                                    <div class="selected-car-dealer">
+                                        <p></p>
+                                        <span class="distance-km"></span>
+                                    </div>
+                                    <div class="selected-dealer-address">
+                                        <p></p>
+                                    </div>
+                                    <a class="ctrl-edit-btn edit-address" id="edit-address-btn">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steper-content-col column-2">
+                            <div class="bookTestDrive__title">
+                                <h3>Tell us your preferred time for test drive visit:</h3>
+                            </div>
+                            <div class="book-td-card card-calendar">
+                                <div class="datepicker">
+                                    <div class="month">NOVEMBER 2024</div>
+                                    <div class="datepicker-calendar"><span class="day">Mon</span><span
+                                            class="day">Tue</span><span class="day">Wed</span><span
+                                            class="day">Thu</span><span class="day">Fri</span><span
+                                            class="day">Sat</span><span class="day">Sun</span><span
+                                            class="date faded">11</span><span class="date faded">12</span><span
+                                            class="date current-day">13</span><span class="date">14</span><span
+                                            class="date">15</span><span class="date">16</span><span
+                                            class="date">17</span><span class="date">18</span><span
+                                            class="date">19</span><span class="date">20</span><span
+                                            class="date">21</span><span class="date">22</span><span
+                                            class="date">23</span><span class="date">24</span><span
+                                            class="date">25</span><span class="date">26</span><span
+                                            class="date">27</span><span class="date faded">28</span><span
+                                            class="date faded">29</span><span class="date faded">30</span><span
+                                            class="date faded">1</span><span class="date faded">2</span><span
+                                            class="date faded">3</span><span class="date faded">4</span><span
+                                            class="date faded">5</span><span class="date faded">6</span><span
+                                            class="date faded">7</span><span class="date faded">8</span><span
+                                            class="date faded">9</span><span class="date faded">10</span><span
+                                            class="date faded">11</span><span class="date faded">12</span><span
+                                            class="date faded">13</span><span class="date faded">14</span><span
+                                            class="date faded">15</span></div>
+                                </div>
+                                <div class="timeslot-picker">
+                                    <div class="title-block">
+                                        <p class="pre-title">Preferred time of Visit on</p>
+                                        <p class="pre-date">Wednesday, November 13</p>
+                                    </div>
+                                    <ul class="time-slots">
+                                        <li class="time-slot morning disabled"
+                                            style="pointer-events: none; opacity: 0.5;">
+                                            <div class="icon"></div>
+                                            <div class="time">
+                                                <p>Morning</p>
+                                                <span>09:00 Am - 12:00 Noon</span>
+                                            </div>
+
+                                        </li>
+                                        <li class="time-slot noon disabled" style="pointer-events: none; opacity: 0.5;">
+                                            <div class="icon"></div>
+                                            <div class="time">
+                                                <p>Afternoon</p>
+                                                <span>12:00 Noon - 04:00 Pm</span>
+                                            </div>
+                                        </li>
+                                        <li class="time-slot evening active">
+                                            <div class="icon"></div>
+                                            <div class="time">
+                                                <p>Evening</p>
+                                                <span>04:00 Pm - 08:00 Pm</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="step-content" id="step4">
+
+                    <div class="steper-content-row">
+                        <div class="steper-content-col column-1 column-hide-xs">
+                            <div class="bookTestDrive__title">
+                                <h3>Details so far:</h3>
+                            </div>
+                            <div class="steper-cards">
+                                <div class="book-td-card d-flex">
+                                    <div class="selected-car-details">
+                                        <p></p>
+                                        <p class="selected-car-type"><span
+                                                class="transmission-type">Automatic</span><span
+                                                class="divider"></span><span class="fuel-type"></span></p>
+                                    </div>
+                                    <div class="selected-car-image">
+                                        <img loading="lazy" alt="Book Test Drive Image"
+                                            src="./media_137dc882b9a82054d6ea4250ba8f06d5482aebb94.jpeg?width=750&amp;format=jpeg&amp;optimize=medium">
+                                    </div>
+                                    <a class="ctrl-edit-btn edit-vehicle-btn" id="pd-edit-vehicle-btn">Edit</a>
+                                </div>
+                                <div class="book-td-card">
+                                    <div class="selected-date-time">
+                                        <div class="selected-date">
+                                            <span>Date :</span>
+                                            <p>13th November 2024 (Wednesday)</p>
+                                        </div>
+                                        <div class="selected-time">
+                                            <span>Time :</span>
+                                            <p>Evening (04:00 pm to 08:00 pm)</p>
+                                        </div>
+                                    </div>
+                                    <a class="ctrl-edit-btn edit-datetime-btn" id="edit-datetime-btn">Edit</a>
+                                </div>
+                                <div class="book-td-card">
+                                    <div class="selected-car-dealer">
+                                        <p></p>
+                                        <span class="distance-km"></span>
+                                    </div>
+                                    <div class="selected-dealer-address">
+                                        <p></p>
+                                    </div>
+                                    <a class="ctrl-edit-btn" id="pd-edit-address-btn">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steper-content-col column-2">
+                            <div class="bookTestDrive__title">
+                                <h3>Please fill in your personal details:</h3>
+                            </div>
+                            <div class="book-td-card card-form">
+                                <div class="personal-details-form__container">
+                                    <form class="personal-details-form__form-wrapper" novalidate="">
+                                        <div class="form__reg">
+                                            <div class="form-row half-width">
+
+                                                <div class="form-input  form-field ">
+
+                                                    <input type="text" id="first-name" name="firstName"
+                                                        placeholder="First Name" aria-labelledby="first-name-label"
+                                                        autocomplete="off">
+
+
+
+                                                </div>
+
+
+                                                <div class="form-input  form-field ">
+
+                                                    <input type="text" id="last-name" name="lastName"
+                                                        placeholder="Last Name" aria-labelledby="last-name-label"
+                                                        autocomplete="off">
+
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-row half-width telContainer phone-verification">
+
+                                                <div class="form-input mobileField form-field ">
+
+                                                    <label class="form-data-label" for="mobile" id="mobile-label">
+                                                        Mobile No
+                                                        <span class="required"><sup>*</sup></span>
+                                                    </label>
+
+                                                    <input type="tel" id="mobile" name="mobile" placeholder="Mobile"
+                                                        minlength="10" maxlength="10" aria-labelledby="mobile-label"
+                                                        required="" autocomplete="off">
+                                                    <span class="validation-text validation-required">Mobile is
+                                                        required</span>
+                                                    <span class="validation-text validation-pattern"
+                                                        id="mobile-validation">Please enter at least 10
+                                                        characters.</span>
+
+                                                </div>
+
+
+                                                <div class="otp-container half-width resend-otp-container form-field"
+                                                    style="display: none;">
+
+                                                    <label class="form-data-label" for="otp" id="otp-label">
+                                                        OTP
+                                                        <span class="required"><sup>*</sup></span>
+                                                    </label>
+
+                                                    <div class="otp-input">
+                                                        <div class="otp-input-container">
+                                                            <input type="text" maxlength="1" class="otp-digit"
+                                                                aria-label="OTP digit 1" required="">
+                                                            <input type="text" maxlength="1" class="otp-digit"
+                                                                aria-label="OTP digit 2" required="">
+                                                            <input type="text" maxlength="1" class="otp-digit"
+                                                                aria-label="OTP digit 3" required="">
+                                                            <input type="text" maxlength="1" class="otp-digit"
+                                                                aria-label="OTP digit 4" required="">
+                                                            <input type="text" maxlength="1" class="otp-digit"
+                                                                aria-label="OTP digit 5" required="">
+                                                        </div>
+
+                                                        <input type="text" id="otp" name="otp" placeholder="Type OTP"
+                                                            aria-labelledby="otp-label" required="" minlength="5"
+                                                            maxlength="5" style="display: none;">
+                                                        <span type="button" id="resend-otp-btn" class="otp-button">Send
+                                                            OTP</span>
+                                                    </div>
+                                                    <span class="validation-text">OTP is required</span>
+                                                </div>
+
+                                                <div class="sendotp-container">
+                                                    <span id="sendotp-btn"
+                                                        style="pointer-events: none; opacity: 0.5;">SEND OTP</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-row half-width">
+
+                                                <div class="form-dropdown  form-field ">
+
+                                                    <select class="form-dropdown-select dropdown-state-user" id="state"
+                                                        name="state" aria-labelledby="state-label">
+                                                        <option value="" disabled="" selected="">State</option>
+
+                                                    </select>
+
+                                                </div>
+
+
+                                                <div class="form-dropdown  form-field ">
+
+                                                    <select class="form-dropdown-select dropdown-city-user" id="city"
+                                                        name="city" aria-labelledby="city-label"
+                                                        data-placeholder="City">
+                                                        <option value="" disabled="" selected="">City</option>
+                                                    </select>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content" id="step5">
+
+
+                    <div class="steper-content-row">
+                        <div class="steper-content-col">
+                            <h3 class="hide-lg">Confirm your details:</h3>
+                            <h4>Selected Vehicle:</h4>
+                            <div class="steper-cards selected-car">
+                                <div class="book-td-card d-flex">
+                                    <div class="selected-car-details">
+                                        <p></p>
+                                        <p class="selected-car-type"><span
+                                                class="transmission-type">Automatic</span><span
+                                                class="divider"></span><span class="fuel-type"></span></p>
+                                    </div>
+                                    <div class="selected-car-image">
+                                        <img loading="lazy" alt="Book Test Drive Image"
+                                            src="./media_137dc882b9a82054d6ea4250ba8f06d5482aebb94.jpeg?width=750&amp;format=jpeg&amp;optimize=medium">
+                                    </div>
+                                    <a class="ctrl-edit-btn" id="ov-edit-vehicle-btn">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steper-content-col">
+
+                            <div class="steper-cards">
+                                <h4>Selected Dealership:</h4>
+                                <div class="book-td-card selected-delear">
+                                    <div class="selected-car-dealer">
+                                        <p></p>
+                                        <span class="distance-km"></span>
+                                    </div>
+                                    <div class="selected-dealer-address">
+                                        <p></p>
+                                    </div>
+                                    <a class="ctrl-edit-btn" id="ov-edit-address-btn">Edit</a>
+                                </div>
+                                <h4>Date &amp; Time:</h4>
+                                <div class="book-td-card">
+                                    <div class="selected-date-time">
+                                        <div class="selected-date">
+                                            <span>Date :</span>
+                                            <p>13th November 2024 (Wednesday)</p>
+                                        </div>
+                                        <div class="selected-time">
+                                            <span>Time :</span>
+                                            <p>Evening (04:00 pm to 08:00 pm)</p>
+                                        </div>
+                                    </div>
+                                    <a class="ctrl-edit-btn" id="ov-edit-datetime-btn">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steper-content-col">
+                            <div class="steper-cards">
+                                <h4>Customer Details:</h4>
+                                <div class="book-td-card">
+                                    <div class="selected-items">
+                                        <div class="selected-row"> <span>Name :</span>
+                                            <p class="customer-name"></p>
+                                        </div>
+                                        <div class="selected-row"> <span>Location :</span>
+                                            <p class="customer-location"></p>
+                                        </div>
+                                        <div class="selected-row"> <span>Mobile Number :</span>
+                                            <p class="customer-mobile-no"></p>
+                                        </div>
+                                    </div>
+                                    <a class="ctrl-edit-btn" id="ov-edit-personal-details">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="prev-btn button button-secondary-blue" disabled="" style="opacity: 1;">Previous</button>
+                <button class="next-btn button button-primary-blue" id="nextButton" disabled="">Next</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,286 @@
+.section.car-detail-banner-container {
+    height: calc(100% - var(--nav-height));
+}
+
+.car-detail-banner-wrapper,
+.car-detail-banner,
+.car-detail-banner__container {
+    height: 100%;
+}
+
+.car-detail-banner-wrapper .car-detail-banner {
+    position: relative;
+}
+
+.car-detail-banner-wrapper .car-detail-banner__container {
+    overflow: hidden;
+}
+
+.car-detail-banner-wrapper .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(355deg, rgba(73, 106, 142, 0.00) -5.57%, rgba(73, 106, 142, 0.40) 49.65%);
+}
+
+.car-detail-banner-wrapper .banner-overlay .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-detail-banner-wrapper .car-detail-banner__container video {
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    padding-top: 40px;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .pre-title {
+    color: var(--tertiary-white);
+    font-family: var(--primary-font-arena);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 1.7512rem;
+    text-transform: uppercase;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .ex-showroom-details {
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    width: fit-content;
+    gap: 4px;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .bottom-container .banner-caption p {
+   display:none;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .bottom-container .banner-caption p strong {
+    display:none;
+}
+
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .logo-image {
+    height: 34px;
+    width: 205px;
+    padding: 0;
+    margin: 5px 0 15px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .logo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .logo-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 120%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            #fff 50%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .ex-showroom-text {
+    width: 100%;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .ex-showroom-details .ex-showroom-text p {
+    color: var(--tertiary-white);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: 1rem;
+    margin: 0;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .ex-showroom-details .ex-showroom-price {
+    color: var(--tertiary-white);
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.25rem;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .banner-cta {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .banner-cta .button.button-primary-white {
+    color: black;
+}
+
+.car-detail-banner-wrapper .car-detail-banner .banner-content .banner-cta .button.button-primary-white:hover {
+    color: black;
+}
+
+
+.car-detail-banner-wrapper .car-detail-banner .bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.car-detail-banner-wrapper .video-config-section .dot-progress-bar {
+    display: none;
+}
+
+.car-detail-banner-wrapper .mute-button,
+.car-detail-banner-wrapper .video-teaser-mute {
+    display: flex;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 0.2px solid rgb(255 255 255 / 20%);
+    background-color: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(14px);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"><mask id="mask0_4352_1315" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect x="0.705078" y="0.703125" width="22.5882" height="22.5882" fill="%23D9D9D9"/></mask><g mask="url(%23mask0_4352_1315)"><path d="M13.9179 19.6297V18.1709C15.2754 17.7391 16.3689 16.9548 17.1984 15.818C18.0281 14.6814 18.4429 13.3999 18.4429 11.9737C18.4429 10.5476 18.0281 9.26614 17.1984 8.12951C16.3689 6.99273 15.2754 6.20842 13.9179 5.77657V4.31775C15.6699 4.78708 17.0974 5.72763 18.2003 7.1394C19.303 8.55116 19.8544 10.1626 19.8544 11.9737C19.8544 13.7849 19.303 15.3963 18.2003 16.8081C17.0974 18.2199 15.6699 19.1604 13.9179 19.6297ZM4.14429 14.3502V9.64434H7.63746L11.6735 5.60834V18.3862L7.63746 14.3502H4.14429ZM13.9179 15.4361V8.5114C14.5526 8.85649 15.0431 9.34245 15.3895 9.96928C15.7357 10.5961 15.9088 11.2721 15.9088 11.9973C15.9088 12.7127 15.7341 13.3785 15.3848 13.9945C15.0354 14.6105 14.5465 15.091 13.9179 15.4361ZM10.2617 9.03257L8.23817 11.0561H5.55582V12.9385H8.23817L10.2617 14.962V9.03257Z" fill="white"/></g></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.car-detail-banner-wrapper .video-teaser-unmute {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"><mask id="mask0_53_125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect width="24" height="24" fill="%23ffffff"/></mask><g mask="url(%23mask0_53_125)"><path d="M19.473 22.1385L16.4578 19.123C16.1116 19.3448 15.7469 19.5371 15.3635 19.7C14.9802 19.8628 14.5834 19.9993 14.173 20.1095V18.5595C14.3872 18.4826 14.5955 18.4041 14.798 18.324C15.0007 18.2438 15.1924 18.1486 15.373 18.0385L11.7885 14.4537V18.7882L7.50003 14.5H3.78853V9.49998H6.83478L1.99628 4.66148L3.05003 3.60773L20.5268 21.0845L19.473 22.1385ZM18.9845 16.7327L17.9095 15.6577C18.257 15.1154 18.5224 14.5336 18.7058 13.9125C18.8891 13.2913 18.9808 12.6455 18.9808 11.975C18.9808 10.4596 18.5401 9.09814 17.6588 7.89048C16.7773 6.68264 15.6154 5.84931 14.173 5.39048V3.84048C16.041 4.33914 17.5593 5.33848 18.7278 6.83848C19.8964 8.33848 20.4808 10.0506 20.4808 11.975C20.4808 12.852 20.3504 13.694 20.0895 14.501C19.8285 15.308 19.4602 16.0519 18.9845 16.7327ZM15.923 13.6712L14.173 11.9212V8.29623C14.8474 8.66289 15.3685 9.17923 15.7365 9.84523C16.1045 10.5112 16.2885 11.2295 16.2885 12C16.2885 12.2948 16.258 12.5823 16.197 12.8625C16.1362 13.1426 16.0449 13.4122 15.923 13.6712ZM11.7885 9.53648L9.63078 7.36923L11.7885 5.21173V9.53648ZM10.2885 15.15V12.9537L8.33478 11H5.28853V13H8.13853L10.2885 15.15Z" fill="white"/></g></svg>');
+}
+
+@media (width >=768px) {
+    .car-detail-banner-wrapper .car-detail-banner .banner-overlay {
+        background: linear-gradient(266deg, rgba(73, 106, 142, 0.00) 10.09%, rgba(73, 106, 142, 0.40) 90.57%);
+    }
+
+    .car-detail-banner-wrapper .banner-overlay .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .pre-title {
+        font-size: 1rem;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .bottom-container {
+        bottom: 43px;
+        gap: 16px;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .bottom-container .banner-caption p {
+        display:none;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .bottom-container .banner-caption p strong {
+        display:none;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .logo-image {
+        height: 44px;
+        display: flex;
+        align-items: flex-start;
+        width: 300px;
+        margin: 0 0 16px;
+        position: relative;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .ex-showroom-details {
+        display: flex;
+        gap: 10px;
+        min-height: 25px;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .ex-showroom-text {
+        line-height: 1.25rem;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .ex-showroom-price {
+        font-size: 1.25rem;
+        font-family: var(--body-font-arena);
+        font-style: normal;
+        font-weight: var(--fw-400);
+        line-height: 1.5rem;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .ex-showroom-details .ex-showroom-text p {
+        font-family: var(--body-font-arena);
+        font-size: .75rem;
+        font-style: normal;
+        font-weight: var(--fw-400);
+        line-height: 1.2509rem;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .banner-cta {
+        width: 100%;
+        position: static;
+        gap: 16px;
+        justify-content: left;
+        padding-top: 1.875rem;
+        padding-bottom: 0;
+    }
+
+    .car-detail-banner-wrapper .car-detail-banner .banner-content .banner-cta .button.button-primary-white:hover {
+        color: white;
+    }
+
+    .car-detail-banner-wrapper .video-config-section {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        justify-content: end;
+        position: relative;
+        z-index: 1;
+    }
+
+    .car-detail-banner-wrapper .video-config-section .dot-progress-bar {
+        width: 100%;
+        max-width: 356px;
+        background: #C5C5C5;
+        cursor: pointer;
+        height: 2px;
+        display: block;
+    }
+
+    .car-detail-banner-wrapper .video-config-section .dot-progress-fill {
+        height: 2px;
+        background: var(--tertiary-white);
+        width: 0;
+    }
+}
+
+@media only screen 
+  and (width >= 768px) 
+  and (device-width <= 1292px) 
+  and (orientation: portrait) 
+  and (resolution >= 96dpi) {
+    .car-detail-banner-wrapper .car-detail-banner .banner-content {
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+}

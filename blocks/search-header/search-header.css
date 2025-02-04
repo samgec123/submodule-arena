@@ -1,0 +1,80 @@
+@import url('../../commons/blocks/search-header/search-header.css');
+
+.search-header-page {
+    .wrapper {
+        flex-direction: column-reverse;
+        row-gap: 25px;
+        .search-recomm {
+            & .search-recomm-title {
+                display: none;
+            }
+            & .search-recomm-list {
+                gap:14px 8px;
+                .search-recomm-list-item {
+                    padding: 5px 13px;
+                    font-family: var(--body-font-arena);
+                    font-size: 10px;
+                    font-weight: 300;
+                    border: .5px solid var(--bars-unselected);
+                    border-radius: unset;
+                    min-width: 68px;
+                    height: 25px;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    line-height: 15px;
+                }
+            }
+    
+        }
+    }
+    &  .menu-header{
+        .menu-title {
+            font-size: 18px;
+            margin: 0 auto;
+            color: var(--primary-text);
+        }
+    }
+    & .search-form {
+        margin-top: 16px;
+        & .search-input {
+            input {
+                font-weight: 500;
+                border-bottom: .5px solid #8D8D8D;;
+                color: var(--inactive-content);
+            }
+            .search-icon {
+                background: url(/icons/search_icon_blue.svg) transparent no-repeat center / contain;
+            }
+        }
+    }
+}
+.panel {
+    &.mob-popupsearch {
+        background: var(--tertiary-white);
+    }
+}
+@media screen and (width >= 768px) {
+    
+    .search-header-page {
+        &.container {
+            padding: 22px 0 75px;
+        }
+        & .search-form {
+            margin-top: 0px;
+            & .search-input {
+                input {
+                    font-weight: 500;
+                }
+            }
+        }
+        & .wrapper {
+            row-gap: 24px;
+            & .search-recomm {
+                & .search-recomm-list {
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}

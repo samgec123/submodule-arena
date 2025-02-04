@@ -1,0 +1,197 @@
+.user__account {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user__account--link {
+  display: flex;
+  align-self: stretch;
+  text-decoration: none;
+  align-items: center;
+  gap: 12px;
+  color: var(--Primary-Main, #18171a);
+  font-family: var(--body-font-arena);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+
+.user__account__list-icon {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  background: var(--secondary-gray-80) !important;
+}
+
+.user__account__list-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.user__account>a {
+  font-size: 14px;
+}
+
+.hide-sm {
+  display: none;
+}
+
+.sign-in-wrapper {
+  z-index: 999;
+  position: absolute;
+  top: var(--nav-height);
+  transform: translateX(16px);
+  max-width: 200px;
+  width: 100%;
+  background: var(--tertiary-white);
+  box-shadow: 0 0 4px 0 rgb(154 154 154 / 25%);
+}
+
+.user__dropdown {
+  background: var(--Tertiary-White);
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+@media (width >=768px) {
+  .user__account__list-icon {
+    background: none;
+  }
+
+  .user__account--link {
+    font-size: 16px;
+  }
+
+  .hide-sm {
+    display: flex;
+  }
+
+  .user__account__list-icon img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.sign-in-teaser {
+  display: flex;
+  border-radius: 2px;
+  background: var(--gradient-3,
+      linear-gradient(34deg, #c9d3d7 18.09%, #ebebeb 102.51%, #ebebeb 102.51%));
+}
+
+.sign-in-teaser__desc {
+  display: flex;
+  width: 186px;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex-grow: 2;
+  justify-content: space-around;
+}
+
+.sign-in-teaser__desc-content h4 {
+  color: var(--Primary-Main, #18171a);
+  font-family: var(--body-font-arena);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 6px 0;
+}
+
+.sign-in-teaser__desc-content p {
+  color: #4a4a4a;
+  font-family: var(--body-font-arena);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 6px 0;
+}
+
+.sign-in-teaser--link {
+  color: var(--Primary-Main, #18171a);
+  font-family: var(--body-font-arena);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 0.64px solid var(--Primary-Main, #18171a);
+}
+
+.sign-in-teaser--link img {
+  height: 16px;
+}
+
+.sign-in-teaser__image {
+  clip-path: polygon(0 30px, 20px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.sign-in-teaser__image img {
+  height: 100%;
+}
+
+.sign-in-teaser--arrow {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../icons/north-east-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (width >=768px) {
+  .sign-in-teaser {
+    display: none;
+  }
+}
+
+@media (width >=999px) {
+  .navbar.navbar-arena .sign-in-wrapper .user__account a {
+    font-family: var(--primary-font-arena);
+    color: var(--tertiary-black);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-gray-80);
+  }
+
+  .navbar.navbar-arena .sign-in-wrapper .user__account a:hover {
+    background-color: var(--secondary-gray-80);
+  }
+
+  .navbar.navbar-arena .sign-in-wrapper .user__dropdown .contact-wrapper .user__contact h4 {
+    color: var(--tertiary-black);
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+
+  .navbar.navbar-arena .sign-in-wrapper .user__dropdown .contact-wrapper .user__contact .user__contact__icons {
+    gap: 24px;
+  }
+
+  .navbar.navbar-arena .sign-in-wrapper .user__dropdown .contact-wrapper .user__contact .user__contact__icons a {
+    padding: 0;
+  }
+
+  .navbar.navbar-arena .sign-in-wrapper .user__dropdown .contact-wrapper .user__contact .user__contact__icons a img {
+    height: 24px;
+    width: 24px;
+  }
+}

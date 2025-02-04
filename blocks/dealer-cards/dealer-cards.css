@@ -1,0 +1,197 @@
+.section.dealer-cards-container {
+  padding-top: clamp(24px, 7vh, 54px);
+  padding-bottom: clamp(24px, 7vh, 54px);
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__cards .teaser__card {
+  background-color: #1c2e88;
+  padding: 24px;
+  color: var(--tertiary-white);
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__cards
+  .teaser__card
+  .teaser__pretitle
+  p {
+  font-size: 14px;
+  font-weight: var(--fw-400);
+  line-height: 28px;
+  margin: 0;
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__title {
+  margin-top: 4px;
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__title h2,
+.dealer-cards-container .dealer-cards-wrapper .teaser__title h3,
+.dealer-cards-container .dealer-cards-wrapper .teaser__title h4,
+.dealer-cards-container .dealer-cards-wrapper .teaser__title h5 {
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  font-style: normal;
+  font-weight: var(--fw-500);
+  margin: 0;
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__actions {
+  display: flex;
+  padding-top: 36px;
+  gap: 0 12px;
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__actions .button {
+  display: inline-block;
+  height: inherit;
+  width: inherit;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: var(--fw-400);
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__actions
+  .button.primary__btn {
+  background-color: var(--secondary-white);
+  border: 1px solid var(--secondary-white);
+  color: var(--primary-text);
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__actions
+  .button.primary__btn:hover {
+  background-color: inherit;
+  color: var(--secondary-white);
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__actions
+  .button.secondary__btn {
+  color: var(--secondary-white);
+  border: 1px solid var(--secondary-white);
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__actions
+  .button.secondary__btn:hover {
+  background-color: var(--secondary-white);
+  border: 1px solid var(--secondary-white);
+  color: var(--primary-text);
+}
+
+.dealer-cards-container .dealer-cards-wrapper .teaser__description {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-top: 20px;
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__description
+  .button-container {
+  margin: 0;
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__description
+  .button-container
+  .button {
+  margin: 0;
+  padding: 0;
+  color: var(--tertiary-white);
+  font-size: 12px;
+  font-weight: var(--fw-600);
+  display: block;
+  position: relative;
+}
+
+.dealer-cards-container
+  .dealer-cards-wrapper
+  .teaser__cards
+  .teaser__card:nth-child(3)
+  .button-container:nth-child(3)
+  .button {
+  font-weight: var(--fw-400);
+  text-decoration: underline;
+}
+
+@media (width >=768px) {
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h2,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h3,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h4,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h5 {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (width >=1024px) {
+  .dealer-cards-container .dealer-cards-wrapper .teaser__cards {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .dealer-cards-container .dealer-cards-wrapper .teaser__cards .teaser__card {
+    width: 33.333%;
+    padding: 24px;
+  }
+
+  .dealer-cards-container
+    .dealer-cards-wrapper
+    .teaser__cards
+    .teaser__card
+    .teaser__pretitle
+    p {
+    font-size: 16px;
+  }
+
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title {
+    margin-top: 4px;
+  }
+
+  .dealer-cards-container .dealer-cards-wrapper .teaser__actions .button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .dealer-cards-container
+    .dealer-cards-wrapper
+    .teaser__description
+    .button-container
+    .button {
+    font-size: 16px;
+  }
+}
+
+@media (width >=1200px) {
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h2,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h3,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h4,
+  .dealer-cards-container .dealer-cards-wrapper .teaser__title h5 {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+  }
+}
+
+@media (width >=1366px) {
+  .dealer-cards-container .dealer-cards-wrapper .teaser__actions .button {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+}

@@ -1,0 +1,177 @@
+.section.arena-help-me-select-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content {
+  background: linear-gradient(228deg,
+      rgb(23 29 155 / 10%) 31.52%,
+      rgb(255 98 0 / 10%) 111.9%);
+}
+
+.arena-help-me-select.container .teaser__content {
+  padding-bottom: 36px;
+  width: 100%;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  max-width: 320px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title h2 {
+  color: var(--secondary-black);
+  font-family: var(--primary-font-arena);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__pretitle {
+  display: inline-block;
+  background: linear-gradient(90deg, #dfcc18 31.7%, #ff0c0c 272.93%);
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__pretitle p {
+  display: flex;
+  padding: 3px 10px 2px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--tertiary-white);
+  text-align: center;
+  font-family: var(--body-font-arena);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+  width: 158px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__pretitle p::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../icons/sparkles-emoji.png");
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__description p {
+  color: var(--secondary-gray-800);
+  font-family: var(--body-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1rem;
+  margin: 0;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__actions {
+  margin-top: 16px;
+}
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__actions button {
+  padding: 0.75rem 1rem;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__card {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: clamp(64px, 7vh, 84px);
+  padding-bottom: clamp(10px, 7vh, 128px);
+  padding-left: 20px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__image img {
+  width: 100%;
+  z-index: 1;
+  height: auto;
+  position: relative;
+}
+
+.arena-help-me-select.container .teaser__content .teaser__info{
+  width: 245px;
+}
+
+
+@media (width >=768px) {
+  .section.arena-help-me-select-container {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__card {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+
+  .arena-help-me-select.container .teaser__content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 50%;
+  }
+
+  .arena-help-me-select.container .teaser__content .teaser__info{
+    width: 100%;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title {
+    margin-top: 19px;
+    max-width: 500px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title h2 {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__pretitle p {
+    font-size: 1.3rem;
+    width: 204px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__info .teaser__description p {
+    font-size: .875rem;
+    font-weight: var(--fw-300);
+    line-height: 1.25rem;
+    letter-spacing: -0.3px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__actions {
+    margin-top: 1.5rem;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__actions .button.button-primary-light {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    padding: 11px 28px;
+  }
+}
+
+@media (width >=1200px) {
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__card {
+    padding-left: 108px;
+  }
+}
+
+@media (width >=1366px) {
+  .arena-help-me-select-wrapper .arena-help-me-select.container .teaser-content .teaser__title h2 {
+    font-size: 2rem;
+  }
+}

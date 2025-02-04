@@ -1,0 +1,143 @@
+{
+  "definitions": [
+      {
+          "title": "Loan Calculator",
+          "id": "loan-calculator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Loan Calculator",
+                  "model": "loan-calculator"
+                }
+              }
+            }
+          }
+        }
+  ],
+  "models": [
+      {
+          "id": "loan-calculator",
+          "fields": [
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_modelCd",
+              "value": "",
+              "label": "modelCd"
+            },
+            {
+            "component": "text-input",
+            "valueType": "string",
+            "name": "loan-calculator_title",
+            "value": "",
+            "label": "Title"
+            },
+            {
+            "component": "richtext",
+            "name": "loan-calculator_description",
+            "value": "",
+            "label": "Description",
+            "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_onRoadPriceText",
+              "label": "OnRoad PriceText"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_loanAmountText",
+              "label": "Loan Amount Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_emiText",
+              "label": "Emi Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_rsText",
+              "label": "Rs Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_defaultAmount",
+              "label": "Default Amount"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_downPaymentErrorText",
+              "label": "Downpayment Error Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_monthText",
+              "label": "Month Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_interestRateText",
+              "label": "Interest Rate Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_interestStartRate",
+              "label": "Interest StartRate"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_interestShowRate",
+              "label": "Interest Show Rate"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_interestEndRate",
+              "label": "Interest EndRate"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_loanTendure",
+              "label": "loan Tendure Text"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_loanTendureStartMonth",
+              "label": "loanTendure StartMonth"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_tenureShowMonth",
+              "label": "tenure Show Month"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name": "loan-calculator_loanTendureEndMonth",
+              "label": "loanTendure EndMonth"
+            }
+          ]
+      }
+  ],
+  "filters": [
+    {
+      "id": "loan-calculator",
+      "components": []
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+.profile-form-overview-block {
+  padding: 1.25rem;
+  background-color: var(--background-color);
+}
+
+.profile-form-overview-container {
+  position: relative;
+  background-color: var(--background-color);
+}
+
+.profile-form-overview-section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--secondary-gray-20);
+}
+
+.profile-form-overview-section:last-child {
+  border-bottom: none;
+}
+
+.profile-form-overview-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.profile-form-overview-section-header p {
+  margin: 0;
+  font-family: var(--body-font-arena);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  color: var(--inactive-content);
+}
+
+.edit-icon {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.edit-icon img {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.875rem;
+}
+
+.field-group div {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group input {
+  font-family: var(--body-font-arena);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: none;
+  pointer-events: none;
+  background-color: transparent;
+  color: var(--tertiary-black);
+  width: 100%;
+  padding: 0;
+}
+
+.field-group-for-two-col input {
+  padding: 10px 0;
+  font-family: var(--body-font-arena);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: none;
+  pointer-events: none;
+  background-color: transparent;
+  color: var(--tertiary-deep-mid-Grey);
+}
+
+.field-group.editable input {
+  pointer-events: auto;
+  background-color: var(--background-color);
+}
+
+.field-group-for-two-col.editable input {
+  pointer-events: auto;
+  background-color: var(--background-color);
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.field-group label {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 0.879rem;
+  font-family: var(--body-font-arena);
+  color: var(--tertiary-black);
+}
+
+.field-group div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.field-group-for-two-col .field-group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (width >= 768px) {
+  .profile-form-overview-block {
+    padding: 5rem 3.5rem;
+    background-color: var(--background-color);
+  }
+
+  .profile-form-overview-container {
+    background-color: var(--background-color);
+    position: relative;
+  }
+
+  .profile-form-overview-section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .field-group div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .field-group label {
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-family: var(--body-font-arena);
+    line-height: 1.25rem;
+    color: var(--tertiary-black);
+  }
+
+  .field-group-for-two-col {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .field-group div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-form-overview-section-header p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--inactive-content);
+  }
+
+  .field-group input {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: var(--tertiary-black);
+    padding: 0;
+  }
+
+  .field-group-for-two-col input {
+    font-size: 1rem;
+    min-width: 17rem;
+  }
+
+  .profile-form-overview-section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .edit-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .no-margin-bottom {
+    margin-bottom: 0;
+  }
+
+  .field-group-for-two-col .field-group:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

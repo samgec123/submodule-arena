@@ -1,0 +1,197 @@
+html,
+body {
+    height: 100%;
+}
+
+main {
+    display: initial;
+}
+
+.corporate-investor-card-container {
+    min-height: calc(100% - var(--nav-height));
+    position: relative;
+}
+
+.corporate-investor-card-wrapper {
+    height: 100%;
+    position: absolute;
+    inset: 0;
+
+}
+
+.corporate-investor-card {
+    height: 100%;
+}
+
+.investor-card {
+    height: 100%;
+    width: 100%;
+}
+
+.investor-card-asset {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.investor-card-asset img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.investor-card-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    padding-top: clamp(2.5rem, 7vh, 4.0625rem);
+    padding-bottom: clamp(1.5625rem, 7vh, 3.5rem);
+    background: linear-gradient(0deg, #171C8F 13.11%, rgba(0, 0, 0, 0.00) 62.67%);
+}
+
+.investor-card-overlay .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.investor-card-topcontent .investor-card-pretitle {
+    color: var(--tertiary-white);
+    font-size: .625rem;
+    font-weight: var(--fw-400);
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.investor-card-topcontent .investor-card-title {
+    max-width: 250px;
+}
+
+.investor-card-topcontent .investor-card-title * {
+    color: var(--tertiary-white);
+    font-size: 1.5rem;
+    font-family: var(--body-font-arena);
+    font-weight: var(--fw-300);
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.investor-card-bottomcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.investor-card-bottomcontent .investor-card-item-heading {
+    color: #FFF;
+    font-family: var(--body-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: 1.25rem;
+    border-bottom: 1px solid var(--tertiary-white);
+    padding-bottom: 8px;
+}
+
+.investor-card-bottomcontent .investor-card-item .button {
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    text-decoration: underline;
+}
+
+.button-secondary-clear.button-icon:hover {
+    background-color: inherit;
+}
+
+.button-secondary-clear.button-icon:active {
+    border: inherit;
+    background-color: inherit;
+}
+
+.button-secondary-clear.button-icon::before {
+    left: 0px;
+    z-index: 1;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 15.7885L7.73075 11.5192L8.78475 10.4348L11.25 12.9V4.5H12.75V12.9L15.2153 10.4348L16.2693 11.5192L12 15.7885ZM6.30775 19.5C5.80258 19.5 5.375 19.325 5.025 18.975C4.675 18.625 4.5 18.1974 4.5 17.6923V14.9808H6V17.6923C6 17.7692 6.03208 17.8398 6.09625 17.9038C6.16025 17.9679 6.23075 18 6.30775 18H17.6923C17.7692 18 17.8398 17.9679 17.9038 17.9038C17.9679 17.8398 18 17.7692 18 17.6923V14.9808H19.5V17.6923C19.5 18.1974 19.325 18.625 18.975 18.975C18.625 19.325 18.1974 19.5 17.6923 19.5H6.30775Z" fill="white"/></svg>');
+}
+
+@media(width >=768px) {
+    .investor-card-overlay {
+        background: linear-gradient(35deg, #171C8F 13.11%, rgba(0, 0, 0, 0.00) 43%);
+    }
+
+    .investor-card-topcontent .investor-card-pretitle {
+        font-size: .8125rem;
+        line-height: .9375rem;
+    }
+
+    .investor-card-topcontent .investor-card-title {
+        max-width: 400px;
+    }
+
+    .investor-card-topcontent .investor-card-title * {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.72px;
+        margin-bottom: 2rem;
+    }
+
+    .investor-card-bottomcontent {
+        flex-direction: row;
+        gap: 35px;
+        padding-bottom: 2.25rem;
+    }
+
+    .investor-card-bottomcontent .investor-card-item-heading {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(width >=1200px) {
+    .investor-card-topcontent .investor-card-pretitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .investor-card-topcontent .investor-card-title * {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .investor-card-bottomcontent .investor-card-item-heading {
+        font-size: 1.25rem;
+        line-height: 1.375rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(width >=1366px) {
+
+    .investor-card-topcontent .investor-card-title * {
+        font-size: 3rem;
+        line-height: 56px;
+        letter-spacing: -0.72px;
+        margin-bottom: 2rem;
+    }
+
+    .investor-card-bottomcontent .investor-card-item-heading {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}

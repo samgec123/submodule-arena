@@ -1,0 +1,231 @@
+.corporate-slider-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.corporate-slider-container * {
+  font-family: var(--body-font-arena);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.corporate-slider-container .btn-content {
+  margin-bottom: 0;
+}
+
+.corporate-slider-container .container__slider .slider-header {
+  display: flex;
+  justify-content: space-between;
+  place-items: center center;
+  border-bottom: 1px solid var(--secondary-gray-200);
+  margin-bottom: 1rem;
+}
+
+.corporate-slider-container .container__slider .slider-header h2 {
+  color: var(--tertiary-black);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.corporate-slider-container .container__slider .nav-arrow.prev {
+  display: none;
+}
+
+.corporate-slider-container .container__slider .nav-arrow.next {
+  height: 24px;
+  width: 24px;
+  padding: 4px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.8919 8.46875H3.3125V7.53125H10.8919L7.33172 3.97109L8 3.3125L12.6875 8L8 12.6875L7.33172 12.0289L10.8919 8.46875Z" fill="%23171C8F"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__cards {
+  display: flex;
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 0 75%;
+  position: relative;
+  left: -50%;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card a {
+  display: block;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card a .teaser__image {
+  /* height: 114px; */
+  height: clamp(114px, 30vw, 230px);
+  overflow: hidden;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card a .teaser__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s linear;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card a:hover .teaser__image img {
+  transform: scale(1.2);
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__title * {
+  color: var(--tertiary-black);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.25rem;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description {
+  padding-top: 10px;
+}
+
+.corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description * {
+  color: var(--secondary-black);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 1rem;
+  margin: 0;
+}
+
+.corporate-slider-container .container.cards-container {
+  overflow: hidden;
+}
+
+.teaser__cards-wrapper {
+  overflow: hidden;
+  margin-left: -24px;
+}
+
+@media (width >=768px) {
+  .corporate-slider-container {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+  }
+
+  .corporate-slider-container .container__slider .nav-arrow.next {
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M17.8198 13.7812H5.1875V12.2187H17.8198L11.8862 6.28516L13 5.1875L20.8125 13L13 20.8125L11.8862 19.7148L17.8198 13.7812Z" fill="%23171C8F"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    background-color: inherit;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 40%;
+    position: relative;
+    left: -20%;
+  }
+
+  .corporate-slider-container .container__slider .slider-header {
+    margin-bottom: 1rem;
+  }
+
+  .corporate-slider-container .container__slider .slider-header * {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card a .teaser__image {
+    height: clamp(180px, 18vw, 220px);
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__title * {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description {
+    padding-top: 1.5rem;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description * {
+    color: var(--secondary-black);
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  .teaser__cards-wrapper {
+    overflow: hidden;
+    margin-left: -56px;
+  }
+}
+
+@media (width >=1200px) {
+
+  .corporate-slider-container .container__slider .slider-header * {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__title * {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description * {
+    font-size: .875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (width >=1366px) {
+
+  .corporate-slider-container .container__slider .slider-header * {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__title * {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card .teaser__content .teaser__description * {
+    color: var(--secondary-black);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .corporate-slider-container .corporate-slider-content .teaser__card a .teaser__image {
+    /* height: 114px; */
+    height: clamp(230px, 17vw, 320px);
+    overflow: hidden;
+  }
+}

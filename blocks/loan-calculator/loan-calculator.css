@@ -1,0 +1,631 @@
+@import url("../forms/default-forms.css");
+
+.loan-calculator-wrapper .calculator-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: var(--tertiary-white);
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    background-color: var(--primary-blue-700);
+    color: var(--tertiary-white);
+    padding: 1.5rem 1rem;
+    margin-top: 20px;
+}
+
+.loan-calculator-wrapper .calculator-container h3.title {
+    color: var(--secondary-black);
+    font-family: var(--primary-font-arena);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    text-transform: capitalize;
+    max-width: 16.188rem;
+    margin-bottom: 0rem;
+}
+
+.loan-calculator-wrapper .calculator-container p.description {
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile/Text Small Light */
+    font-family: var(--body-font-arena);
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: normal;
+    max-width: 17.5rem;
+    margin-top: 0.5rem;
+}
+
+.loan-calculator-wrapper .calculator-container .form-dropdown-label {
+    color: var(--tertiary-black);
+    font-family: var(--primary-font-arena);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+}
+
+.loan-calculator-wrapper .calculator-container .form-dropdown select {
+    border-bottom: 1px solid var(--secondary-gray-200);
+    appearance: none;
+}
+
+.loan-calculator-wrapper .calculator-container .form-dropdown select option {
+    color: var(--tertiary-black);
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 2rem;
+}
+
+.loan-calculator-wrapper .calculator-container .form-dropdown select option:disabled {
+    color: var(--inactive-content);
+}
+
+.loan-calculator-wrapper .calculator-container .loan-varient.form-field label,
+.loan-calculator-wrapper .calculator-container .loan-city.form-field label {
+    display: none;
+}
+
+.loan-calculator-wrapper .calculator-container .right-section label {
+    color: var(--tertiary-white);
+    font-family: var(--primary-font-arena);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+}
+
+.loan-calculator-wrapper .calculator-container .left-section .field-group {
+    display: flex;
+    margin-bottom: 0.938rem;
+    gap: 16px;
+}
+
+.loan-calculator-wrapper .calculator-container .left-section .field-group:last-child {
+    margin-bottom: 0;
+}
+
+.loan-calculator-wrapper .calculator-container .left-section .field-group>* {
+    flex: 1 1 50%;
+    /* Each child occupies 50% of the width */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.313rem;
+    font-weight: bold;
+}
+
+select.form-dropdown-select {
+    width: 90%;
+}
+
+select:last-child {
+    margin-right: 0;
+}
+
+.slider-group {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+#interestValue,
+#tenureValue {
+    float: right;
+    font-weight: bold;
+}
+
+.loan-calculator-wrapper .calculator-container .action-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.loan-calculator-wrapper .calculator-container .action-group button {
+    color: var(--tertiary-white);
+    font-family: var(--body-font-arena);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 140%;
+    text-transform: capitalize;
+    display: inline-flex;
+    height: 2.188rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border: 1px solid var(--tertiary-white);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.loan-calculator-wrapper .calculator-container .action-group button.resetBtn {
+    border: none;
+    padding: 0;
+    text-decoration-line: underline;
+}
+
+.loan-calculator-wrapper .calculator-container .loan-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loan-calculator-wrapper .calculator-container .loan-bottom-section .total-amount {
+    color: var(--tertiary-white);
+    text-align: right;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 1.125rem;
+}
+
+.loan-calculator-wrapper .calculator-container #interestRateSlider {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    width: 100%;
+    height: 0.125rem;
+    background: var(--tertiary-white);
+    border-radius: 0;
+}
+
+.loan-calculator-wrapper .calculator-container #loanTenureSlider {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    width: 100%;
+    height: 0.125rem;
+    background: var(--tertiary-white);
+    border-radius: 0;
+}
+
+.loan-calculator-wrapper .calculator-container #loanTenureSlider::-webkit-slider-thumb,
+.loan-calculator-wrapper .calculator-container #interestRateSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 3px solid var(--tertiary-white);
+    border-radius: 0;
+}
+
+.loan-calculator-wrapper .calculator-container #loanTenureSlider::-moz-range-thumb,
+.loan-calculator-wrapper .calculator-container #loanTenureSlider::-ms-thumb,
+.loan-calculator-wrapper .calculator-container #interestRateSlider::-ms-thumb,
+.loan-calculator-wrapper .calculator-container #interestRateSlider::-moz-range-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 3px solid var(--tertiary-white);
+    border-radius: 0;
+}
+
+.loan-calculator-wrapper .calculator-container .slider-value {
+    display: flex;
+    justify-content: space-between;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 2rem;
+    margin-top: -0.5rem;
+}
+
+.loan-calculator-wrapper .calculator-container .range-tooltip.interest-rate {
+    width: 1.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.loan-calculator-wrapper .calculator-container .range-tooltip {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(1.25rem);
+    width: 3.5rem;
+    height: 1.25rem;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 34%;
+    color: var(--tertiary-white);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 1.25rem;
+    padding: 0.063rem 0.625rem;
+}
+
+#interestRateSlider {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    width: 100%;
+    height: 0.125rem;
+    background: var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#interestRateSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#interestRateSlider::-moz-range-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#interestRateSlider::-ms-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#loanTenureSlider {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    width: 100%;
+    height: 0.125rem;
+    background: var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#loanTenureSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#loanTenureSlider::-moz-range-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+#loanTenureSlider::-ms-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--primary-blue-700);
+    cursor: pointer;
+    border: 0.1875rem solid var(--secondary-gray-10);
+    border-radius: 0;
+}
+
+.slider-value {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+}
+
+.price-block p,
+.loan-amount-block p:not(.downpayment-err),
+.emi-block p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+}
+
+.price-block h4,
+.loan-amount-block h4 {
+    margin-top: 0.9375rem;
+    margin-bottom: 0;
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: normal;
+}
+
+#loanForm .form-dropdown,
+#loanForm .form-input {
+    padding-left: 0;
+}
+
+#loanForm .form-dropdown::after{
+    --size: 2px;
+
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    top: 55px;
+    right: 18px;
+    border-right: var(--size) solid rgba(0, 0, 0, 0.925);
+    border-bottom: var(--size) solid rgba(0, 0, 0, 0.954);
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+}
+
+.emi-block p {
+    margin-top: 1.5rem;
+}
+
+.emi-block h4 {
+    margin-top: 0.25rem;
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--fw-600);
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.month-text {
+    color: var(--neutrals-sub-texts-paragraphs, var(--tertiary-black));
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 1.75rem;
+    margin-left: 0.625rem;
+}
+
+#downPayment::placeholder,
+#loanCalculator {
+    color: var(--inactive-content);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 2rem;
+}
+
+#loanCalculator {
+    border-bottom: 1px solid #8D8D8D;
+    background-color: var(--tertiary-white);
+}
+
+#downPayment {
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 2rem;
+    border-bottom: 1px solid #8D8D8D;
+    width: 90%;
+}
+
+#loanCalculator-label,
+#downPayment-label {
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font-arena);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+}
+
+/* .form-data {
+    display: flex;
+    flex-direction: column;
+  } */
+
+/* Position the .emi-block after the .right-section in mobile view */
+/* .emi-block {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+  } */
+
+
+@media (width >=768px) {
+    .loan-calculator-wrapper .calculator-container .left-section .field-group {
+        display: flex;
+        /* min-height: 105px; */
+        gap: unset;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .left-section {
+        margin-top: 1.5rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .right-section {
+        padding: 1.5rem;
+        padding-top: 3.25rem;
+        margin-top: 0;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .left-section .loan-varient.form-field,
+    .loan-calculator-wrapper .calculator-container .left-section .loan-city.form-field {
+        align-content: end;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .right-section label {
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+    }
+
+    #loanForm .form-dropdown::after{
+        right: 40px;
+    }
+    
+    .loan-calculator-wrapper .calculator-container {
+        display: block;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .form-data {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2.125rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container h3.title {
+        font-size: 2rem;
+        max-width: 27.125rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .slider-value {
+        font-size: 0.875rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .action-group {
+        gap: 1.5rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container .loan-bottom-section .total-amount {
+        font-size: 1rem;
+    }
+    
+    .price-block,
+    .loan-amount-block {
+        width: 10.3125rem;
+        margin-left: 0.625rem;
+    }
+    
+    .price-block p,
+    .loan-amount-block p:not(.downpayment-err),
+    .emi-block p {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--Neutrals-Headings, var(--secondary-black));
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font-arena);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: var(--fw-700);
+        line-height: 2rem;
+    }
+    
+    .price-block h4,
+    .loan-amount-block h4 {
+        margin-top: 0.9375rem;
+        margin-bottom: 0;
+        color: var(--neutrals-sub-texts-paragraphs, var(--tertiary-black));
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--body-font-arena);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: var(--fw-600);
+        line-height: 1.5rem;
+    }
+
+    .loan-amount-block p, .loan-amount-block h4 {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    
+    #loanForm .form-dropdown,
+    #loanForm .form-input {
+        padding-left: 0;
+    }
+    
+    .emi-block p {
+        margin-top: 20px;
+    }
+    
+    .emi-block h4 {
+        margin-top: 1rem;
+        color: var(--tertiary-black);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font-arena);
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: var(--fw-600);
+        line-height: 3rem;
+    }
+    
+    .month-text {
+        color: var(--neutrals-sub-texts-paragraphs, var(--tertiary-black));
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font-arena);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: var(--fw-500);
+        line-height: 1.75rem;
+        margin-left: 0.625rem;
+    }
+    
+    #downPayment::placeholder,
+    #loanCalculator {
+        color: var(--inactive-content);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font-arena);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: var(--fw-500);
+        line-height: 2rem;
+    }
+    
+    #loanCalculator-label,
+    #downPayment-label {
+        color: var(--Neutrals-Headings, var(--secondary-black));
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font-arena);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: var(--fw-700);
+        line-height: 2rem;
+    }
+    
+    .loan-calculator-wrapper .calculator-container p.description {
+        max-width: 24.75rem;
+        color: var(--tertiary-black);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--body-font-arena);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: var(--fw-300);
+        line-height: 1.25rem;
+    }
+    
+
+}

@@ -1,0 +1,117 @@
+.section.disclaimer-faq-container {
+    padding: 2.187rem 0.937rem;
+}
+
+.block.disclaimer-faq .faq-title h2 {
+    color: white;
+    background-color: var(--primary-blue-350);
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+    font-weight: normal;
+}
+
+.block.disclaimer-faq .faq-list {
+    margin-right: 0.625rem;
+}
+
+.block.disclaimer-faq .faq-description {
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--tertiary-black);
+    font-family: var(--heading-font-family);
+}
+
+.block.disclaimer-faq .faq-list .faq-item-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.block.disclaimer-faq .faq-list .faq-item-label p {
+    color: var(--tertiary-black);
+    font-weight: bold;
+}
+
+.block.disclaimer-faq .faq-list .faq-item {
+    background: var(--tertiary-white);
+    border-bottom: var(--tertiary-black) solid 1px;
+    padding: 0.5rem;
+}
+
+.block.disclaimer-faq summary::after {
+    content: "+";
+    position: absolute;
+    font-style: normal;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--heading-font-size-l);
+    right: 1.125rem;
+    font-weight: 300;
+}
+
+.block.disclaimer-faq details[open] summary::after {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.05rem;
+    background: currentcolor;
+    vertical-align: middle;
+}
+
+.block.disclaimer-faq .faq-list .faq-item-body {
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--tertiary-black);
+    font-family: var(--heading-font-family);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.block.disclaimer-faq details .faq-item-body p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.block.disclaimer-faq details[open] .faq-item-body {
+    max-height: 12.5rem;
+    transition: max-height 0.5s ease-in;
+}
+
+.block.disclaimer-faq .faq-description,
+.block.disclaimer-faq .faq-list {
+    padding: 0 0.5rem 0 1rem;
+}
+
+@media (width >= 768px) {
+    .disclaimer-faq-container {
+        background: var(--tertiary-white);
+    }
+
+    .block.disclaimer-faq .faq-description,
+    .block.disclaimer-faq .faq-list {
+        padding: 0.15rem 1rem 0.15rem 2.5rem;
+    }
+
+    .block.disclaimer-faq .faq-title {
+        margin-bottom: 2rem;
+    }
+
+    .block.disclaimer-faq .faq-title h2 {
+        padding: 30px;
+    }
+}
+
+@media (width >= 900px) {
+    .section.disclaimer-faq-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,122 @@
+{
+  "definitions": [
+    {
+      "title": "Hotspot",
+      "id": "hotspot",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Hotspot",
+              "filter": "hotspot",
+              "model": "hotspot"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hotspot",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "subtitle",
+          "label": "SubTitle",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "label": "Image Alt",
+          "name": "imageAlt",
+          "valueType": "string",
+          "required": true,
+          "condition": {
+            "!==": [
+              {
+                "var": "image"
+              },
+              ""
+            ]
+          }
+        },
+        {
+          "component": "number",
+          "name": "hotspot_yPos",
+          "label": "Hotspot Y-axis Position in %",
+          "valueType": "number",
+          "validation": {
+            "numberMin": 0,
+            "numberMax": 100,
+            "customErrorMsg": "Value should be between 0-100"
+          }
+        },
+        {
+          "component": "number",
+          "name": "hotspot_xPos",
+          "label": "Hotspot X-Axis Position in %",
+          "valueType": "number",
+          "validation": {
+            "numberMin": 0,
+            "numberMax": 100,
+            "customErrorMsg": "Value should be between 0-100"
+          }
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "hotspot",
+      "components": []
+    }
+  ]
+}

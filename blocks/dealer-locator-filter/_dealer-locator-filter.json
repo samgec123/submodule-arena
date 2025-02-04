@@ -1,0 +1,446 @@
+{
+  "definitions": [
+    {
+      "title": "Dealer Locator Filter",
+      "id": "dealer-locator-filter",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Dealer Locator Filter",
+              "model": "dealer-locator-filter"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "dealer-locator-filter",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "bdc_tab1-text",
+          "value": "",
+          "label": "Tab 1 Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_tab2-text",
+          "value": "",
+          "label": "Tab 2 Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_title",
+          "value": "",
+          "label": "Dealer Locator Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "bdc_titleType",
+          "value": "h3",
+          "label": "Dealer Locator Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_subtitle",
+          "value": "",
+          "label": "Dealer Locator Sub-Title",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "bdc_reqQuoteCta_link",
+          "label": "Request Quote CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_reqQuoteCta_linkText",
+          "label": "Request Quote CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "bdc_reqQuoteCta_linkTarget",
+          "value": "",
+          "label": "Open Request Quote Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "bdc_bookNowCta_link",
+          "label": "Book Now CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_bookNowCta_linkText",
+          "label": "Book Now CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "bdc_bookNowCta_linkTarget",
+          "value": "",
+          "label": "Open Book Now Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "bdc_dreamCarTitle",
+          "value": "",
+          "label": "Book Your Dream Car Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "bdc_dreamCarTitleType",
+          "value": "h3",
+          "label": "Book Your Dream Car Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "dlf_viewType",
+          "value": "",
+          "label": "View Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Card View",
+              "value": "cardView"
+            },
+            {
+              "name": "Map View",
+              "value": "mapView"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_completeJourneyText",
+          "label": "Continue Journey Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_completeCta_text",
+          "label": "Complete CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_navigateCta_linkNavi",
+          "label": "Navigate CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_navigateCta_linkTextDlf",
+          "label": "Navigate CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_navigateCta_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_mapViewCta_link",
+          "label": "Map View CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_mapViewCta_linkText",
+          "label": "Map View CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_carViewLink",
+          "label": "Card View Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_cardHeading",
+          "value": "",
+          "description": "Value should contains dealer-count placeholder like this ${dealer-count}",
+          "label": "Card Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_cardHeadingType",
+          "value": "h2",
+          "label": "Card Heading Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            },
+            {
+              "name": "None",
+              "value": "p"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_mapHeading",
+          "value": "",
+          "label": "Map Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_mapHeadingType",
+          "value": "h2",
+          "label": "Map Heading Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            },
+            {
+              "name": "None",
+              "value": "p"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_scheduleVisit_link",
+          "label": "Schedule Visit Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_scheduleVisit_linkText",
+          "label": "Schedule Visit Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_scheduleVisit_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_scheduleTestDrive_link",
+          "label": "Schedule Test Drive Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_scheduleTestDrive_linkText",
+          "label": "Schedule Test Drive Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_scheduleTestDrive_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_successMessageCopyText",
+          "label": "Success Message for Copying text",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "valueType": "string",
+          "name": "dlf_locationMarkerIcon_image",
+          "label": "Location Marker Icon",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_locationMarkerIcon_imageAlt",
+          "label": "Location Marker Icon Alt Text",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_noDealerFoundErrorMessage",
+          "label": "No Dealers Found Error Message",
+          "description": "Value should contain car-name placeholder like this {car-name}",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_dealerDreamCarSubTitle",
+          "label": "Dealer Dream Car Sub-Title",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

@@ -1,0 +1,158 @@
+.hero-banner-carousel__container.innovations {
+    padding-top: clamp(24px, 7vh, 54px);
+    padding-bottom: clamp(24px, 7vh, 54px);
+}
+
+.hero-banner-carousel__container.innovations .main-title {
+    color: var(--tertiary-black);
+    font-family: var(--body-font-arena);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    border-bottom: 1px solid var(--secondary-gray-200);
+    margin: 0;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-banner-carousel__container.innovations .slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner-carousel__container.innovations .slide .content-overlay {
+    align-self: center;
+    text-align: center;
+    display: block;
+}
+
+.hero-banner-carousel__container.innovations .slide .content-overlay .banner-title {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    color: var(--tertiary-black);
+    text-align: center;
+    font-family: var(--body-font-arena);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.25rem;
+}
+
+.hero-banner-carousel__container.innovations .slide .content-overlay .banner-sub-title {
+    color: var(--secondary-black);
+    text-align: center;
+    font-family: var(--body-font-arena);
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: var(--fw-300);
+    line-height: .875rem;
+}
+
+.hero-banner-carousel__container.innovations .slide .content-overlay .banner-cta {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.hero-banner-carousel__container.innovations .indicators .carousel-right-arrow {
+    display: none;
+}
+
+.hero-banner-carousel__container.innovations .slide img,
+.hero-banner-carousel__container.innovations .slide video {
+    height: 200px;
+}
+
+.hero-banner-carousel__container.innovations .carousel-container .indicators .line.video-bar.active,
+.hero-banner-carousel__container.innovations .carousel-container .indicators .line.image-bar.active {
+    background: var(--dark-color);
+}
+
+.hero-banner-carousel__container.innovations .carousel-container .indicators .line.video-bar .video-progress-fill,
+.hero-banner-carousel__container.innovations .carousel-container .indicators .line.image-bar .image-progress-fill {
+    width: 0;
+    background: var(--primary-blue-700);
+    height: 2px;
+    transition: width 0.3s linear;
+}
+
+@media (width >=768px) {
+    .hero-banner-carousel__container.innovations .main-title {
+        font-size: 2rem;
+        font-weight: var(--fw-400);
+        line-height: 3rem;
+        letter-spacing: -0.48px;
+        padding-bottom: 12px;
+        margin-bottom: 24px;
+    }
+
+    .hero-banner-carousel__container.innovations .carousel-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-banner-carousel__container.innovations .slide {
+        flex-direction: row;
+    }
+
+    .hero-banner-carousel__container.innovations .slide img,
+    .hero-banner-carousel__container.innovations .slide video {
+        width: 50%;
+        height: 390px;
+    }
+
+    .hero-banner-carousel__container.innovations .indicators {
+        bottom: 32px;
+        width: 50%;
+        left: auto;
+        right: 0;
+        padding-left: 120px;
+    }
+
+    .hero-banner-carousel__container.innovations .indicators .carousel-right-arrow {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .hero-banner-carousel__container.innovations .slide .content-overlay {
+        align-self: auto;
+        text-align: left;
+        display: block;
+        width: 50%;
+        padding-left: 120px;
+    }
+
+    .hero-banner-carousel__container.innovations .slide .content-overlay .banner-title {
+        color: var(--tertiary-black);
+        font-family: var(--body-font-arena);
+        font-size: 2.25rem;
+        line-height: 3rem;
+        letter-spacing: -0.54px;
+        padding: 0;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+
+    .hero-banner-carousel__container.innovations .slide .content-overlay .banner-sub-title {
+        text-align: left;
+        font-weight: var(--fw-400);
+        line-height: 1.5rem;
+        letter-spacing: -0.24px;
+        margin: 0;
+        padding-bottom: 32px;
+        font-size: 1rem;
+        max-width: 396px;
+    }
+
+    .hero-banner-carousel__container.innovations .slide .content-overlay .banner-cta {
+        padding: 0;
+    }
+
+    .hero-banner-carousel__container.innovations .slide .content-overlay .banner-cta .button-primary-blue{
+        font-weight: var(--fw-400);
+    }
+}

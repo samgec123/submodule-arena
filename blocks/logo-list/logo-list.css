@@ -1,0 +1,50 @@
+.logo-list-container .logo-list-wrapper {
+    background: #FAFAFA;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 120px 0;
+}
+
+.logo-list-container .car-logos.container {
+    display: inline-flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    gap: 88px;
+}
+
+.logo-list-container .car-logos.container a {
+    display: inline-flex;
+}
+
+.logo-list-container .car-logos.container a img {
+    min-width: 110px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-list-container .car-logos.container a img:hover {
+    transform: scale(1.2);
+}
+
+@media (width <=999px) {
+    .logo-list-container .logo-list-wrapper {
+        padding: 20px;
+        margin: 48px 0;
+    }
+
+    .logo-list-container .car-logos.container {
+        padding: 0;
+    }
+
+    .logo-list-container .car-logos.container a img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+}

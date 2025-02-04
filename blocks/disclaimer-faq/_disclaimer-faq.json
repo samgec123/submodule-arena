@@ -1,0 +1,94 @@
+{
+    "definitions": [
+        {
+            "title": "Disclaimer FAQ",
+            "id": "disclaimer-faq",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Disclaimer FAQ",
+                            "model": "disclaimer-faq",
+                            "filter": "disclaimer-faq",
+                            "faq_title": "Disclaimer FAQ",
+                            "faq_titleType": "h2"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Disclaimer FAQ Item",
+            "id": "disclaimer-faq-item",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block/item",
+                        "template": {
+                            "name": "Disclaimer FAQ Item",
+                            "model": "disclaimer-faq-item",
+                            "question": "Lorem Ipsum",
+                            "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "disclaimer-faq",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "faq_title",
+                    "value": "",
+                    "label": "Title",
+                    "required": true
+                },
+                {
+                    "component": "text",
+                    "name": "faq_titleType",
+                    "value": "h2",
+                    "hidden": true
+                },
+                {
+                    "component": "richtext",
+                    "name": "description",
+                    "value": "",
+                    "label": "Description",
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "id": "disclaimer-faq-item",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "question",
+                    "value": "",
+                    "label": "Question"
+                },
+                {
+                    "component": "richtext",
+                    "name": "answer",
+                    "value": "",
+                    "label": "Answer",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "disclaimer-faq",
+            "components": [
+                "disclaimer-faq-item"
+            ]
+        }
+    ]
+}

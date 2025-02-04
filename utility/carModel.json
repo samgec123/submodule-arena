@@ -1,0 +1,80 @@
+{
+  "data": {
+    "carModelList": {
+      "items": [
+        {
+          "modelCd": "AT",
+          "validYN": "Y",
+          "modelDesc": "Alto K10",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Hatchback"
+        },
+        {
+          "modelCd": "VB",
+          "validYN": "Y",
+          "modelDesc": "Brezza",
+          "modelId": "101",
+          "model3dCode": "Maruti New",
+          "bodyType": "MUV/SUV"
+        },
+        {
+          "modelCd": "CL",
+          "validYN": "Y",
+          "modelDesc": "Celerio",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Hatchback"
+        },
+        {
+          "modelCd": "VR",
+          "validYN": "Y",
+          "modelDesc": "Eeco",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Van"
+        },
+        {
+          "modelCd": "ER",
+          "validYN": "Y",
+          "modelDesc": "Ertiga",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "MUV/SUV"
+        },
+        {
+          "modelCd": "SP",
+          "validYN": "Y",
+          "modelDesc": "S-presso",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Hatchback"
+        },
+        {
+          "modelCd": "DR",
+          "validYN": "Y",
+          "modelDesc": "Swift Desire",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Sedan"
+        },
+        {
+          "modelCd": "SR",
+          "validYN": "Y",
+          "modelDesc": "Swift",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Hatchback"
+        },
+        {
+          "modelCd": "WA",
+          "validYN": "Y",
+          "modelDesc": "Wagonr",
+          "modelId": null,
+          "model3dCode": null,
+          "bodyType": "Hatchback"
+        }
+      ]
+    }
+  }
+}

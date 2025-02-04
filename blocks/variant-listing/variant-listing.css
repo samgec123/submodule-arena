@@ -1,0 +1,340 @@
+html,
+body {
+    height: 100%;
+}
+
+main {
+    display: initial !important;
+}
+
+.section.variant-listing-container {
+    height: calc(80% - var(--nav-height));
+    min-height: 500px;
+    position: relative;
+}
+
+.variant-listing-wrapper {
+    overflow: hidden;
+}
+
+.variant-listing-wrapper,
+.variant-listing-wrapper .variant-listing.block,
+.variant-listing-wrapper .variant_list {
+    height: 100%;
+}
+
+.variant-overlay-wrapper {
+    position: absolute;
+    inset: 0;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    background: linear-gradient(180deg, #FFF 24.17%, rgba(247, 247, 247, 0.61) 39.32%, rgba(238, 238, 238, 0.19) 43.04%, rgba(255, 255, 255, 0.20) 51.03%, rgba(27, 27, 27, 0.00) 56.06%, #000 79.45%);
+}
+
+.variant-overlay-wrapper .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.variant-listing .variant_list img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transform: scale(1.5);
+    object-fit: contain;
+}
+
+.variant-details-wrapper .title * {
+    color: var(--tertiary-black);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: 1.75rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.variant-details-wrapper .sub-title {
+    color: var(--tertiary-black);
+    font-size: .625rem;
+    font-weight: var(--fw-300);
+    line-height: normal;
+    margin-bottom: 1rem;
+    width: 287px;
+}
+
+.variant-details-wrapper .right-cta .button {
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    text-decoration: underline;
+}
+
+.variant-details-wrapper .right-cta {
+    position: absolute;
+    bottom: 24px;
+}
+
+.variant-details-wrapper .right-cta .button-secondary-download.button-icon::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    top: 8px;
+    background: url(../../icons/download.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.variant-details-wrapper .right-cta .button-secondary-download.button-icon {
+    color: var(--secondary-white);
+}
+
+.variant-details .variant-info-details,
+.variant-details .variant-info-price {
+    display: none;
+}
+
+.variant-details .variant-info-details .partitioned-sentence {
+    display: inline-flex;
+    align-items: center;
+}
+
+.variant-details .variant-info-details .partition {
+    width: 1px;
+    /* Adjust width of the partition */
+    height: 12px;
+    /* Adjust height of the partition */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 50%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 10px;
+    /* Spacing around the partition */
+    margin-top: 2px;
+}
+
+.variant-details .variant-info-details .partition span {
+    display: inline-block;
+    /* Ensure that the spans align correctly */
+}
+
+
+.variant-overlay-wrapper .variant-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 94px;
+}
+
+.variant-details .variant-info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--tertiary-white);
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+        color: var(--tertiary-white);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: var(--fw-700);
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+
+    padding-bottom: 8px;
+}
+
+.variant-details .variant-info-title .variants {
+    display: inline-block;
+    color: var(--tertiary-white);
+    font-family: var(--body-font-arena);
+    font-size: .75rem;
+    font-weight: var(--fw-400);
+    line-height: normal;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(20px);
+    padding: 6px 8px;
+    margin-left: 0px;
+}
+
+@media(width >=768px) {
+    .variant-overlay-wrapper {
+        padding-top: 84px;
+        padding-bottom: 80px;
+        background: linear-gradient(180deg, #FFF 4.79%, rgba(238, 238, 238, 0.19) 24.95%, rgba(27, 27, 27, 0.00) 61.02%, rgba(25, 25, 25, 0.08) 65.81%, #000 74.55%);
+    }
+
+    .variant-details-wrapper .right-cta .button-secondary-download.button-icon::before {
+        height: 24px;
+        width: 24px;
+        left: 0px;
+        top: 6px;
+    }
+
+    .section.variant-listing-container {
+        min-height: 768px;
+    }
+
+    .variant-listing .variant_list img {
+        object-position: center;
+        transform: scale(1);
+        object-fit: cover;
+    }
+
+    .variant-details-wrapper .variant-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .variant-details .variant-info-details,
+    .variant-details .variant-info-price {
+        display: block;
+    }
+
+    .variant-details-wrapper .right-cta {
+        position: static;
+        bottom: 24px;
+    }
+
+    .variant-overlay-wrapper .variant-details {
+        flex-direction: row;
+        gap: 24px;
+        padding-bottom: 0;
+    }
+
+    .variant-overlay-wrapper .variant-details .variant-info {
+        flex-grow: 1;
+        width: 33.333%;
+    }
+
+    .variant-overlay-wrapper .variant-details .variant-info-details {
+        color: var(--tertiary-white);
+        font-size: .75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: capitalize;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        gap: 1%;
+        white-space: nowrap;
+        flex-wrap: wrap;
+    }
+
+    .variant-overlay-wrapper .variant-details .variant-info-price {
+        color: var(--tertiary-white);
+
+        .ex-showroom {
+            font-family: var(--primary-font-arena);
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.125rem;
+        }
+
+        .price-text {
+            font-family: var(--body-font-arena);
+            font-size: .625rem;
+            font-style: normal;
+            font-weight: var(--fw-300);
+            line-height: 140%;
+            text-transform: capitalize;
+            padding-top: 4px;
+        }
+    }
+
+    .variant-details-wrapper .title * {
+        font-size: 1.375rem;
+        line-height: 1.5rem;
+    }
+
+    .variant-details-wrapper .sub-title {
+        font-size: .75rem;
+        line-height: 1.25rem;
+        width: 370px;
+    }
+
+    .variant-details .variant-info-title {
+        justify-content: left;
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 1rem;
+            line-height: 1.250rem;
+        }
+
+        padding-bottom: 16px;
+    }
+
+    .variant-details .variant-info-title .variants {
+        padding: 5px 8px;
+        margin-left: 20px;
+    }
+}
+
+@media(width >=1200px) {
+    .variant-details-wrapper .title * {
+        font-size: 1.5rem;
+        line-height: 1.625rem;
+    }
+
+    .variant-listing .variant_list img {
+        object-position: center;
+        transform: scale(1);
+        object-fit: cover;
+    }
+
+    .variant-details-wrapper .sub-title {
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+
+    .variant-overlay-wrapper .variant-details .variant-info-details {
+        gap: 3%;
+    }
+
+    .variant-details .variant-info-title {
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 1.5rem;
+            line-height: 1.625rem;
+        }
+
+        padding-bottom: 16px;
+    }
+}
+
+@media(width >=1366px) {
+    .variant-details-wrapper .title * {
+        font-size: 2rem;
+        line-height: 2.375rem;
+    }
+
+    .variant-details-wrapper .sub-title {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+
+    .variant-details .variant-info-title {
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 2rem;
+            line-height: 140%;
+        }
+
+    }
+}

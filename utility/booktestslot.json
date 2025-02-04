@@ -1,0 +1,366 @@
+{
+  "code": 200,
+  "message": "SUCCESS",
+  "result": [
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "CHOWGULE INDUSTRIES PVT. LTD.",
+      "MUL_DEALER_CD": "1911",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH102406"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "WONDER CARS PVT LTD",
+      "MUL_DEALER_CD": "1903",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH102653"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "MAHALAXMI AUTOMOTIVES PVT. LTD.",
+      "MUL_DEALER_CD": "1912",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH104482"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "MY CAR (PUNE) PVT. LTD.",
+      "MUL_DEALER_CD": "1907",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH101703"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "SUMANKIRTI CARS PVT. LTD",
+      "MUL_DEALER_CD": "1915",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH102549"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "SAI SERVICE PRIVATE LIMITED",
+      "MUL_DEALER_CD": "1901",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH101722"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "SAI SERVICE PRIVATE LIMITED",
+      "MUL_DEALER_CD": "1905",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH102249"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "SEHGAL AUTORIDERS PVT. LTD.",
+      "MUL_DEALER_CD": "1913",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH102758"
+        }
+      ]
+    },
+    {
+      "CITY_FOR_CD": "19",
+      "DEALER_NAME": "WONDER CARS PVT LTD",
+      "MUL_DEALER_CD": "1925",
+      "VINLIST": [
+        {
+          "AvailableTimeSlot": [
+            {
+              "EndTime": "12:00",
+              "Id": 1,
+              "IsBooked": false,
+              "StartTime": "10:00"
+            },
+            {
+              "EndTime": "14:00",
+              "Id": 2,
+              "IsBooked": false,
+              "StartTime": "12:00"
+            },
+            {
+              "EndTime": "16:00",
+              "Id": 3,
+              "IsBooked": false,
+              "StartTime": "14:00"
+            },
+            {
+              "EndTime": "18:00",
+              "Id": 4,
+              "IsBooked": false,
+              "StartTime": "16:00"
+            }
+          ],
+          "COLOR_DESC": "METALLIC SIZZLING RED",
+          "ECOLOR_CD": "WAA",
+          "VARIANT_CD": "ATR4BV2",
+          "VARIANT_DESC": "MARUTI ALTO K10 VXI+ 1L 5MT",
+          "VIN": "MA3SFM61SNH104530"
+        }
+      ]
+    }
+  ]
+}

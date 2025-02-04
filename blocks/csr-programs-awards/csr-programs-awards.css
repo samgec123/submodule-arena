@@ -1,0 +1,121 @@
+.csr-programs-awards-container .csr-hr {
+    stroke-width: 0.0625rem;
+    stroke: var(--secondary-gray-200);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.csr-section{
+    width: 100%;
+}
+.csr-programs-awards-container .csr-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    color: var(--neutrals-sub-texts-paragraphs, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--body-font-aren);
+}
+
+.csr-programs-awards-container .teaser__image {
+    height: 10.5rem;
+}
+
+.csr-programs-awards-container .teaser__image img {
+    width: 100%;
+    height: 10.5rem;
+}
+
+.csr-programs-awards-container .teaser__title h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--tertiary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--body-font-aren);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.csr-programs-awards-container .teaser__description p {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-weight: var(--fw-300);
+    line-height: 1rem;
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--body-font-aren);
+    font-size: 0.625rem;
+    font-style: normal;
+}
+
+@media (width>=768px) {
+
+    .csr-section{
+        width: 51.8125rem;
+    }
+
+    .csr-programs-awards-container .csr-hr {
+        margin-bottom: 1.5rem;
+    }
+
+    .csr-programs-awards-container .csr-title {
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: var(--fw-400);
+        line-height: 3rem;
+        letter-spacing: -0.03rem;
+        color: var(--tertiary-black);
+        font-family: var(--body-font-aren);
+    }
+
+    .csr-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+    }
+
+    .csr-container>div {
+        flex: 1;
+    }
+
+    .teaser__card {
+        width: 100%;
+    }
+
+    .csr-programs-awards-container .teaser__image {
+        height: 13.125rem;
+    }
+
+    .csr-programs-awards-container .teaser__image img {
+        width: 100%;
+        height: 13.125rem;
+    }
+
+   
+
+    .csr-programs-awards-container .teaser__description p {
+        color: var(--dark-gray-text);
+        font-family: var(--body-font-aren);
+        font-style: normal;
+        font-weight: var(--fw-400);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 20rem;
+    }
+
+    .csr-programs-awards-container .teaser__title h5 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--ternary-black);
+        font-family: var(--body-font-aren);
+        font-weight: var(--fw-400);
+        font-style: normal;
+    }
+}

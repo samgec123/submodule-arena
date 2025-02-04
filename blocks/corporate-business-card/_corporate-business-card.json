@@ -1,0 +1,160 @@
+{
+    "definitions": [
+        {
+            "title": "Corporate Business Card",
+            "id": "corporate-business-card",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Corporate Business Card",
+                            "model": "corporate-business-card",
+                            "filter": "corporate-business-card"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Card Item",
+            "id": "corporate-business-card-item",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block/item",
+                        "template": {
+                            "name": "Card Item",
+                            "model": "corporate-business-card-item",
+                            "filter": "corporate-business-card-item",
+                            "business-card-info_titleType":"h2"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "corporate-business-card",
+            "fields": [
+                {
+                    "component": "text-input",
+                    "name": "title",
+                    "label": "Title",
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "id": "corporate-business-card-item",
+            "fields": [
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType": "image",
+                    "multi": false,
+                    "valueType": "string",
+                    "name": "business-card-assets_logoImage",
+                    "label": "Logo Image"
+                },
+                {
+                    "component": "text-input",
+                    "name": "business-card-assets_logoImageAlt",
+                    "label": "Logo Alt Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "assetType":"video",
+                    "valueType": "string",
+                    "name": "business-card-assets_video",
+                    "label": "Video"
+                },
+                {
+                    "component": "text-input",
+                    "name": "business-card-info_title",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "business-card-info_titleType",
+                    "value": "h2",
+                    "label": "Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "h1",
+                            "value": "h1"
+                        },
+                        {
+                            "name": "h2",
+                            "value": "h2"
+                        },
+                        {
+                            "name": "h3",
+                            "value": "h3"
+                        },
+                        {
+                            "name": "h4",
+                            "value": "h4"
+                        },
+                        {
+                            "name": "h5",
+                            "value": "h5"
+                        },
+                        {
+                            "name": "h6",
+                            "value": "h6"
+                        }
+                    ]
+                },
+                {
+                    "component": "text-input",
+                    "name": "business-card-info_subtitle",
+                    "label": "Subtitle",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "business-card-cta_link",
+                    "label": "Explore CTA Link"
+                },
+                {
+                    "component": "text-input",
+                    "name": "business-card-cta_linkText",
+                    "label": "Explore CTA Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "business-card-cta_linkTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "_blank"
+                        },
+                        {
+                            "name": "No",
+                            "value": "_self"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "corporate-business-card",
+            "components": [
+                "corporate-business-card-item"
+            ]
+        }
+    ]
+}

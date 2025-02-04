@@ -1,0 +1,217 @@
+.teaser-list-container {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.teaser-list-container .teaser__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.teaser-list-container .teaser__list-container>div:last-child {
+  background: #1C2E88;
+  position: relative;
+}
+
+.teaser-list-container .teaser__list-container>div:last-child::before {
+  background: linear-gradient(0deg, #2F37D4 0%, #2F37D4 100%), #2F37D4;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.875rem;
+  height: 3.125rem;
+  z-index: 1;
+}
+
+.teaser-list-container .teaser__list-container>div:last-child::after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Crect x='11' y='11' width='11' height='11' fill='%232F37D4'/%3E%3Crect width='11' height='11' fill='%232A30B2'/%3E%3C/svg%3E");
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1.375rem;
+  height: 1.375rem;
+  z-index: 1;
+  display: flex;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__pretitle * {
+  color: #575A5E;
+  font-family: var(--primary-font-arena);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__description * {
+  color: #01044B;
+  font-family: var(--primary-font-arena);
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+  margin: 0.5rem 0;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__actions a {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: #171D9B;
+  color: #fff;
+  font-family: var(--body-font-arena);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.07rem;
+}
+
+.teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content .teaser__actions a {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: #fff;
+  color: #171D9B;
+  font-family: var(--body-font-arena);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.07rem;
+}
+
+.teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content .teaser__description * {
+  color: #FFF;
+  font-family: var(--primary-font-arena);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  width: 80%;
+}
+
+.teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content{
+  padding: 1.563rem;
+  position: relative;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content {
+  padding: 0.5rem 1.563rem 1.563rem;
+  position: relative;
+}
+
+.teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__actions,
+.teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content .teaser__actions {
+  margin-top: 1.5rem;
+}
+
+@media (width >=999px) {
+  .teaser-list-container {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .teaser-list-container .teaser__list-container {
+    flex-direction: row;
+  }
+
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card {
+    flex-direction: row;
+  }
+
+  .teaser-list-container .teaser__list-container>div:first-child {
+    flex: 0 0 66.6666%;
+  }
+
+  .teaser-list-container .teaser__list-container>div:last-child {
+    flex: 0 0 33.3333%;
+  }
+
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card,
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content {
+    height: 100%;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__image,
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content {
+    flex: 0 0 50%;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content {
+    background: #F9F9F9;
+    padding: 1.563rem;
+  }
+
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content {
+    padding-top: 2rem !important;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__description * {
+    font-size: 1.875rem;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__actions,
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content .teaser__actions {
+    position: absolute;
+    bottom: 1.563rem;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__actions a,
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content .teaser__actions a {
+    width: fit-content;
+  }
+
+  .teaser-list-container .teaser__list-container>div:last-child::after {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Crect x='24' y='24' width='24' height='24' fill='%232F37D4'/%3E%3Crect width='24' height='24' fill='%232A30B2'/%3E%3C/svg%3E");
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
+
+@media (width >=1280px) {
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__actions {
+    position: absolute;
+    bottom: 2.5rem;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content .teaser__description * {
+    font-size: 2rem;
+  }
+
+  .teaser-list-container .teaser__list-container div:first-child .teaser__card .teaser__content {
+    padding: 3rem;
+  }
+
+  .teaser-list-container .teaser__list-container div:last-child .teaser__card .teaser__content {
+    padding-top: 3rem !important;
+  }
+}

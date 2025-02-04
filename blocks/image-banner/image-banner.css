@@ -1,0 +1,28 @@
+.section.image-banner-container {
+  height: 18.625rem;
+  overflow: hidden;
+}
+
+.section.image-banner-container .image-wrapper {
+  height: 18.625rem;
+  width: 100%;
+}
+
+.section.image-banner-container .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (width >= 1024px) {
+  .section.image-banner-container {
+    height: 23.75rem;
+    overflow: hidden;
+  }
+
+  .section.image-banner-container .image-wrapper {
+    height: 23.75rem;
+    width: 100%;
+  }
+}

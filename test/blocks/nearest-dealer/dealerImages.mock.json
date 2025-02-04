@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "dealerImage1": {
+        "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--95b2c1b1-28db-4f57-8d7a-6a4a6f7b3788/dealership1.jpg?preferwebp=true&quality=80",
+        "_authorUrl": "https://author-p135331-e1341966.adobeaemcloud.com/content/dam/arena/com/in/en/images/dealer-images/dealership1.jpg",
+        "_publishUrl": "https://dev-nexa.marutisuzuki.com/content/dam/arena/com/in/en/images/dealer-images/dealership1.jpg"
+      },
+      "dealerImage2": {
+        "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--933a3d7f-974b-4dee-89da-8bcb6f150e29/dealership2.jpg?preferwebp=true&quality=80",
+        "_authorUrl": "https://author-p135331-e1341966.adobeaemcloud.com/content/dam/arena/com/in/en/images/dealer-images/dealership2.jpg",
+        "_publishUrl": "https://dev-nexa.marutisuzuki.com/content/dam/arena/com/in/en/images/dealer-images/dealership2.jpg"
+      },
+      "dealerImage3": {
+        "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--265e0312-be45-47a7-af56-22d6acdedbbd/dealership3.jpg?preferwebp=true&quality=80",
+        "_authorUrl": "https://author-p135331-e1341966.adobeaemcloud.com/content/dam/arena/com/in/en/images/dealer-images/dealership3.jpg",
+        "_publishUrl": "https://dev-nexa.marutisuzuki.com/content/dam/arena/com/in/en/images/dealer-images/dealership3.jpg"
+      }
+    }
+  ]
+}

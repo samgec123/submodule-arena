@@ -1,0 +1,99 @@
+{
+  "definitions": [
+    {
+      "title": "engine-hotspot",
+      "id": "engine-hotspot",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "engine-hotspot",
+              "filter": "engine-hotspot",
+              "model": "engine-hotspot"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "engine-hotspot",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "subtitle",
+          "label": "SubTitle",
+          "valueType": "string"
+        },
+        {
+          "component": "number",
+          "name": "engine-hotspot_yPos",
+          "label": "engine-hotspot Y-axis Position in %",
+          "valueType": "number",
+          "validation": {
+            "numberMin": 0,
+            "numberMax": 100,
+            "customErrorMsg": "Value should be between 0-100"
+          }
+        },
+        {
+          "component": "number",
+          "name": "engine-hotspot_xPos",
+          "label": "engine-hotspot X-Axis Position in %",
+          "valueType": "number",
+          "validation": {
+            "numberMin": 0,
+            "numberMax": 100,
+            "customErrorMsg": "Value should be between 0-100"
+          }
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "engine-hotspot",
+      "components": []
+    }
+  ]
+}

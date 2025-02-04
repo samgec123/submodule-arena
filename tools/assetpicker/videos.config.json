@@ -1,0 +1,32 @@
+{
+    "aemTierType": [
+        "delivery"
+    ],
+    "apiKey": "asset_search_service",
+    "repoNames": [
+        "delivery-p135331-e1341966.adobeaemcloud.com"
+    ],
+    "videoResponseType" : "html",
+    "filterSchema": [
+        {
+            "fields": [
+                {
+                    "element": "checkbox",
+                    "name": "type",
+                    "defaultValue": [
+                        "video/*"
+                    ],
+                    "options": [
+                        {
+                            "label": "Video",
+                            "value": "video/*",
+                            "readOnly": true
+                        }
+                    ]
+                }
+            ],
+            "header": "File Type",
+            "groupKey": "FileTypeGroup"
+        }
+    ]
+}

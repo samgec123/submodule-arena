@@ -1,0 +1,999 @@
+@import url("../forms/default-forms.css");
+
+.register-interest-container {
+  padding-top: clamp(24px, 7vh, 40px);
+  padding-bottom: clamp(24px, 7vh, 40px);
+
+}
+
+.register-interest-container .validation-text {
+  position: absolute;
+  margin: 0;
+  bottom: -15px;
+}
+
+.register-interest-form__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  position: relative;
+}
+
+.register-interest-form__container .sec-heading {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+.register-interest-form__container .sec-heading #backButton {
+  height: 24px;
+  width: 24px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.register-interest-form__heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 50px;
+}
+
+.register-interest-form__content h2 {
+  color: var(--secondary-black);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: normal;
+  margin: 0;
+}
+
+.register-interest-form__heading .step-progress {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  color: var(--tertiary-black);
+  font-family: var(--primary-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: .875rem;
+}
+
+.register-interest-form__heading .step-progress #currentStep {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--fw-500);
+  line-height: .875rem;
+}
+
+.register-interest-form__heading .signin-text {
+  color: #575A5E;
+  font-family: var(--body-font-arena);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: var(--fw-500);
+  line-height: 1.25rem;
+  margin: 0;
+  display: none;
+}
+
+.register-interest-form__heading .signin-text a {
+  color: var(--primary-blue-700);
+  text-decoration-line: underline;
+}
+
+.register-interest-form__content p {
+  color: var(--tertiary-black);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.register-interest-form__container .step-content {
+  padding-top: 24px;
+}
+
+.register-interest-form__container .step-content#step2 {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.register-interest-form__container .step-content h4,
+.dealer-title {
+  color: var(--tertiary-black);
+  font-family: var(--primary-font-arena);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 0;
+}
+
+.dealership-step {
+  padding-top: 16px;
+}
+
+
+.dealership-form-row-1 .dealership-form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  position: relative;
+}
+
+.dealership-form-row-1 .dealership-form-fields .pin-code {
+  grid-area: 2 / 1 / 2 / 3;
+}
+
+.dealership-form-row-1 .dealership-form-fields .inner-detect-location__box_tab {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.register-interest-form__container .step-footer {
+  display: flex;
+  justify-content: end;
+}
+
+.register-interest-form__container .car-details {
+  padding-top: 24px;
+}
+
+.register-interest-container .form__connect {
+  padding-top: 1.5rem;
+}
+
+.register-interest-container .form__connect .user-msg {
+  color: var(--tertiary-black);
+  font-size: 0.625rem;
+  font-weight: var(--fw-500);
+  line-height: 0.875rem;
+  display: none;
+}
+
+.register-interest-container .form__connect .user-msg .greeting {
+  display: block;
+  color: var(--tertiary-black);
+  font-size: 1.25rem;
+  font-weight: var(--fw-300);
+  line-height: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.register-interest-container .form__connect .form-radio {
+  display: flex;
+  width: 100%;
+  border-top: 0;
+  margin-bottom: 0;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.register-interest-container .form__connect .form-radio .form-checkbox-label {
+  color: var(--tertiary-black);
+  font-family: var(--primary-font-arena);
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: var(--fw-600);
+  line-height: 1.25rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.register-interest-container .form__connect .form-radio div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.register-interest-container .form__connect .form-radio label {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 1.25rem;
+  font-size: .75rem;
+  margin: 0;
+}
+
+.register-interest-container .form__connect .form-ctrl .chk-agree {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.register-interest-container .form__connect .form-ctrl label {
+  font-family: var(--body-font-arena);
+  font-style: normal;
+  font-weight: var(--fw-300);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.register-interest-container .form__connect .form-button button {
+  float: none;
+  text-transform: inherit;
+  border: none;
+  margin-top: 0;
+}
+
+.register-interest-form__form-wrapper {
+  padding-bottom: 0;
+}
+
+.register-interest-container .form-input.form-field .form-data-label,
+.register-interest-container .otp-container .form-data-label,
+.register-interest-container .form-dropdown .form-dropdown-label {
+  display: none;
+}
+
+.register-interest-container .form-row.half-width .form-input.form-field,
+.register-interest-container .form-dropdown {
+  width: 100%;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.register-interest-container .form-field input,
+.register-interest-container .form-field select {
+  border-bottom: 1px solid #8d8d8d;
+  font-size: 1rem;
+  background-color: var(--tertiary-white);
+  font-family: var(--body-font-arena);
+  font-weight: var(--fw-500);
+}
+
+.register-interest-container .form-field select {
+  appearance: none;
+  padding-right: 20px;
+}
+
+.register-interest-container .form-dropdown::after {
+  --size: 2px;
+
+  position: absolute;
+  content: "";
+  pointer-events: none;
+  top: 14px;
+  right: 1px;
+  border-right: var(--size) solid rgba(0, 0, 0, 0.925);
+  border-bottom: var(--size) solid rgba(0, 0, 0, 0.954);
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.register-interest-container input::placeholder {
+  color: var(--inactive-content) !important;
+  opacity: 1;
+}
+
+.register-interest-container input::-ms-input-placeholder {
+  color: var(--inactive-content) !important;
+}
+
+.register-interest-container .sendotp-container {
+  position: absolute;
+  left: 55%;
+}
+
+.register-interest-container .otp-button {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  color: var(--primary-blue-700);
+  font-family: var(--body-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.125rem;
+  text-decoration-line: underline;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.register-interest-container .otp-container {
+  margin-bottom: 24px;
+}
+
+.register-interest-container .form-button.button-secondary.form-field {
+  margin: 0;
+}
+
+.register-interest-container #register-interest-form .feedback__form-btn .chk-agree {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: .875rem;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.telContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register-interest-container #sendotp-btn {
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.register-interest-container #sendotp-btn.button-secondary-blue:hover:not(:disabled) {
+  background-color: var(--primary-blue-900);
+}
+
+.register-interest-container .button[disabled] {
+  cursor: not-allowed;
+}
+
+.register-interest-container .button {
+  cursor: pointer;
+}
+
+.register-interest-form__form-wrapper .form-row.half-width {
+  position: relative;
+}
+
+.register-interest-container .form-row.half-width .form-input.mobileField {
+  margin-right: 50%;
+}
+
+.otp-container input {
+  padding: 0.5rem 0.9375rem 0.7rem 0;
+  outline: none;
+}
+
+.register-interest #modal #close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.register-interest-modal-body {
+  background: var(--tertiary-white);
+  padding: 1.25rem;
+  min-width: 330px;
+  width: 330px;
+  text-align: center;
+  box-shadow: 0 5px 0.9375rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.register-interest #modal h2::before {
+  content: url("../../icons/register-popup-heading-icon.svg");
+  display: block;
+}
+
+.register-interest #modal h2 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding-bottom: 19px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      #000 50%,
+      rgba(0, 0, 0, 0) 100%) 1;
+}
+
+.popup-model-p1,
+.popup-model-p2 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.popup-model-p1 {
+  margin-bottom: 8px;
+}
+
+.popup-model-p2 {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.0625rem;
+  margin-top: 0px;
+  width: 90%;
+}
+
+.register-interest #modal .form-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.register-interest #modal button#details {
+  display: flex;
+  width: 7.875rem;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  background: none;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--primary-blue-700);
+}
+
+.register-interest-form__container .step-content .step-panel {
+  display: none;
+
+}
+
+.register-interest-form__container .step-content .step-panel.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-interest-form__container .step-content .step-panel.active#step1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* dealer card style radio button */
+.register-interest-container .container__dealers {
+  padding-top: 1.5rem;
+  padding-right: 4px;
+}
+
+.dealership-step .dealer__list__container {
+  height: 182px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 24px;
+}
+
+.register-interest-container .dealer__radio {
+  display: none;
+}
+
+.register-interest-container .dealer__radio+.dealership__top__info::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.register-interest-container .dealer__radio:checked+.dealership__top__info::before {
+  background-color: var(--primary-blue-700);
+  width: 16px;
+  height: 16px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  border-color: #ccc;
+}
+
+/* Style for the dealer card */
+
+.register-interest-container .dealer__card {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.register-interest-container .dealer__card .dealership__top__info {
+  padding-left: 28px;
+  padding-right: 84px;
+  position: relative;
+}
+
+.register-interest-container .dealer__card .dealer__name {
+  color: var(--neutrals-heading);
+  font-family: var(--body-font-arena);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 20px;
+  margin: 0;
+}
+
+.dealer__radio:checked+.dealership__top__info .dealer__name {
+  font-weight: var(--fw-600);
+}
+
+.register-interest-container .dealer__card .dealer__address {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 24px;
+  padding-left: 28px;
+  padding-right: 84px;
+  margin: 0;
+}
+
+.register-interest-container .dealer__card .dealer__distance {
+  color: var(--tertiary-black);
+  text-align: right;
+  font-family: var(--body-font-arena);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.25rem;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dealership-step .dealer__list__container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dealership-step .dealer__list__container::-webkit-scrollbar-track {
+  background: rgba(196, 196, 196, 0.20);
+}
+
+.dealership-step .dealer__list__container::-webkit-scrollbar-thumb {
+  background: var(--primary-blue-700);
+}
+
+.model-variant .validation-text {
+  display: none !important;
+}
+
+.custom-toaster {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 70% of the viewport width */
+  max-width: 691px;
+  /* Optional: Limit maximum width */
+  height: 42px;
+  background-color: #F8DADA;
+  /* Light red background for error */
+  color: #C2220A;
+  /* Default text color */
+  padding: 8px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  /* Use flexbox for layout */
+  align-items: center;
+  /* Center elements vertically */
+  gap: 10px;
+  /* Space between text and button */
+  text-align: left;
+  bottom: 40px;
+  /* Keeps it just above the viewport's bottom edge */
+  width: 90%;
+  /* Wider on smaller screens */
+  font-size: 12px;
+  /* Adjust text size for mobile */
+}
+
+.custom-toaster #toaster-retry-message {
+  color: #E15F67;
+}
+
+.custom-toaster span {
+  color: #C2220A;
+  /* Custom color for the span text */
+}
+
+.custom-toaster button {
+  background: none;
+  border: none;
+  color: #000;
+  /* Red color for the close button */
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  /* Push the close button to the right */
+}
+
+/* custom checkbox style */
+.feedback__form-btn .form-checkbox {
+  display: none;
+}
+
+.feedback__form-btn .form-checkbox+label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.feedback__form-btn .form-checkbox+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #8E8E8E;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.feedback__form-btn .form-checkbox:checked+label:before {
+  background-color: var(--primary-blue-700);
+  border: 1px solid #8E8E8E;
+  content: '';
+  color: white;
+  height: 18px;
+  width: 18px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.36688 11.7692L2.81055 8.2129L3.52321 7.50007L6.36688 10.3437L12.4772 4.2334L13.1899 4.94623L6.36688 11.7692Z" fill="white"/></svg>');
+}
+
+@media (width >=768px) {
+  .register-interest-form__container .step-content .step-panel.active {
+    display: grid;
+    gap: clamp(24px, 6vw, 100px);
+  }
+
+  .register-interest-form__container .sec-heading {
+    gap: 6px;
+  }
+
+  .register-interest-form__container .step-content h4,
+  .dealer-title,
+  .register-interest-container .form__connect .form-radio .form-checkbox-label {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .register-interest-form__heading .step-progress {
+    font-size: .875rem;
+    line-height: .875rem;
+  }
+
+  .register-interest-form__heading .step-progress #currentStep {
+    font-size: 1.25rem;
+    line-height: .875rem;
+  }
+
+  .register-interest-form__container {
+    min-height: 300px;
+  }
+
+  .register-interest-form__container .step-content .step-panel.active#step1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .register-interest-container .signin-text {
+    display: none;
+  }
+
+  .register-interest-container .form__reg {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .register-interest-form__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding-right: inherit;
+  }
+
+  .register-interest-form__heading .register-interest-form__content {
+    width: 400px;
+  }
+
+  .register-interest-form__container .car-details {
+    padding-top: 0;
+  }
+
+  .register-interest-container .form-row.half-width .form-input.mobileField {
+    margin-right: 0;
+  }
+
+  .register-interest-form__content h2 {
+    font-size: 2rem;
+  }
+
+  .register-interest-form__content p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .register-interest-form__heading p.signin-text {
+    color: #575a5e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: 1.25rem;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: none;
+  }
+
+  .register-interest-form__heading p.signin-text span {
+    font-weight: var(--fw-500);
+  }
+
+  .register-interest-form__form-wrapper {
+    position: relative;
+  }
+
+  .register-interest-container .form__reg .form-row.half-width {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: nowrap;
+  }
+
+  .telContainer .half-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .register-interest-container .form-row.half-width .form-input.form-field {
+    width: 50%;
+    flex: none;
+  }
+
+  .register-interest-container .sendotp-container {
+    margin-right: auto;
+  }
+
+  .register-interest-container .form-row.half-width .form-dropdown {
+    margin-bottom: 0;
+  }
+
+  .dealership-step .dealer__list__container {
+    height: 110px;
+  }
+
+  .register-interest-container .container__dealers {
+    padding-top: 0;
+  }
+
+  .register-interest-container .chk-agree {
+    margin-top: 21px;
+  }
+
+  .feedback__form-btn.form-row.half-width.form__connect {
+    width: 100%;
+    padding: 0;
+  }
+
+  .register-interest-form__container .step-content#step2 {
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    gap: clamp(24px, 6vw, 130px);
+  }
+
+  .register-interest-container .form__connect {
+    margin-top: 0;
+  }
+
+  .register-interest-container .form__connect .form-ctrl {
+    height: 6.25rem;
+  }
+
+  .register-interest #modal #close-modal {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .register-interest-modal-body {
+    min-width: 50rem;
+  }
+
+  .register-interest #modal h2 {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+
+  .popup-model-p1 {
+    font-size: 1rem;
+  }
+
+  .popup-model-p2-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup-model-p2 {
+    font-size: 0.875rem;
+    width: 400px;
+    margin-top: 0px;
+  }
+
+  .resend-otp-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .register-interest-container .form__connect .form-radio label {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .register-interest-container .otp-button {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+  }
+
+  .custom-toaster {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    /* 70% of the viewport width */
+    max-width: 691px;
+    /* Optional: Limit maximum width */
+    height: 42px;
+    background-color: #F8DADA;
+    /* Light red background for error */
+    color: #C2220A;
+    /* Default text color */
+    padding: 8px 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center elements vertically */
+    gap: 10px;
+    /* Space between text and button */
+    text-align: left;
+  }
+
+  .custom-toaster #toaster-retry-message {
+    color: #E15F67;
+  }
+
+  .custom-toaster span {
+    color: #C2220A;
+    /* Custom color for the span text */
+  }
+
+  .custom-toaster button {
+    background: none;
+    border: none;
+    color: #000;
+    /* Red color for the close button */
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    /* Push the close button to the right */
+  }
+
+  .dealership-form-row-1 .dealership-form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    position: relative;
+  }
+
+  .dealership-form-row-1 .dealership-form-fields .pin-code {
+    grid-area: inherit;
+  }
+
+  /* custom checkbox style */
+  .feedback__form-btn .form-checkbox+label {
+    padding-left: 38px;
+  }
+
+  .feedback__form-btn .form-checkbox+label:before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feedback__form-btn .form-checkbox:checked+label:before {
+    height: 24px;
+    width: 24px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.54934 17.6538L4.21484 12.3193L5.28384 11.2501L9.54934 15.5156L18.7148 6.3501L19.7838 7.41935L9.54934 17.6538Z" fill="white"/></svg>');
+  }
+
+  .register-interest-container .form-field input,
+  .register-interest-container .form-field select {
+    font-weight: var(--fw-600);
+  }
+}
+
+
+.register-interest-container .step-left {
+  display: flex;
+  align-items: center;
+}
+
+.register-interest-container .step-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.register-interest-container .step-progress {
+  font-size: 16px;
+  color: #555;
+}
+
+.register-interest-container .step-content {
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+.register-interest-container .otp-input-container {
+  display: flex;
+  gap: 1.69px;
+  /* Space between each digit */
+}
+
+.register-interest-container .otp-digit {
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  color: #000;
+  border-radius: 0px;
+}
+
+.register-interest-container .otp-digit:focus {
+  border-bottom-color: #007BFF;
+  /* Change underline color on focus */
+}
+
+.register-interest-container .otp-digit.green {
+  color: #37B200;
+  border-bottom-color: #37B200;
+}
+
+.register-interest-container .otp-digit.red {
+  color: #F0373A;
+  border-bottom-color: #F0373A;
+}
+
+.register-interest-container .form-input.mobileField.valid::after {
+  content: '';
+  /* Remove the default content */
+  position: absolute;
+  right: 15px;
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: #37b200;
+  /* Set background to green */
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2216%22 height%3D%2216%22 viewBox%3D%220 0 16 16%22 fill%3D%22none%22%3E%3Cpath d%3D%22M6.36688 11.7692L2.81055 8.21284L3.52321 7.5L6.36688 10.3437L12.4772 4.23334L13.1899 4.94617L6.36688 11.7692Z%22 fill%3D%22white%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

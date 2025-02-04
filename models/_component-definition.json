@@ -1,0 +1,82 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "...": "./_button.json#/definitions"
+        },
+        {
+          "...": "./_text.json#/definitions"
+        },
+        {
+          "...": "./_title.json#/definitions"
+        },
+        {
+          "...": "./_image.json#/definitions"
+        },
+        {
+          "...": "./_cta-with-icon.json#/definitions"
+        },
+        {
+          "...": "./_teaser.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "...": "./_section.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "id": "forms",
+      "components": [
+        {
+          "...": "./_forms.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "...": "../blocks/*/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Smart Finance",
+      "id": "smart-finance",
+      "components": [
+        {
+          "...": "../commons/blocks/smart-finance/*/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Common Blocks",
+      "id": "common-blocks",
+      "components": [
+        {
+          "...": "../commons/blocks/cards/_cards.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/columns/_columns.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/fragment/_fragment.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/hero/_hero.json#/definitions"
+        }
+      ]
+    }
+  ]
+}
